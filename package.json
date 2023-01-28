@@ -1,5 +1,5 @@
 {
-  "name": "api_rest",
+  "name": "api_pais_estado_ciudad",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
     "dev": "npx nodemon app.js" 
  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Joan Cermeño",
+  "license": "GNU GPL v3",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
