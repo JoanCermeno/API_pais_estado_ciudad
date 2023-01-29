@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx nodemon app.js" 
- },
+    "dev": "npx nodemon app.js"
+  },
   "keywords": [],
   "author": "Joan Cermeño",
   "license": "GNU GPL v3",
@@ -16,6 +16,8 @@
     "express": "^4.18.2",
     "knex": "^2.4.2",
     "mysql2": "^3.0.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "objection": "^3.0.1",
+    "objection-db-errors": "^1.1.2"
   }
 }

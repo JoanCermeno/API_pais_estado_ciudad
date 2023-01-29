@@ -8,22 +8,84 @@
 	<title>Get Started</title>
 </head>
 <body>
-	<h2 class="main_title">Demo API PAISES ESTADOS Y CUIDADES</h2>
-	<p class="text">Hola y bienvenido, esta api te proporciona una lista de todos,los países del mundo con sus respectivas estados o regiones. y sus ciudades o pueblos. demás de otras informaciones. API publica creada por Joan Cermeño :)</p>
-	
-	<div class="form-floating">
-	  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-	    <option selected>Pais</option>
-	    <option value="1">One</option>
-	    <option value="2">Two</option>
-	    <option value="3">Three</option>
-	  </select>
-	  <label for="floatingSelect">Selecciona un país.</label>
-	  <button type="button" class="btn btn-outline-info">Info</button>
+	<h2 class="main_title">DEMO PAISES ESTADOS Y CUIDADES</h2>
+
+	<p class="text-start text">Hola y bienvenido, esta api te proporciona una lista de todos,los países del mundo con sus respectivas estados o regiones. y sus ciudades o pueblos. demás de otras informaciones. API publica creada por Joan Cermeño :)</p>
+	<div class="container w-75 py-2 border rounded" style="background-color: #eee;">
+
+		<div class="form-floating p-2 mx-auto">
+
+		  <select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">	
+		    <option selected>Seleccione un pais</option>
+		  </select>
+		  <label for="select_pais">Pais.</label>
+		</div>
+		<div class="form-floating p-2">
+
+		  <select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
+		    <option selected>estado</option>
+		    <option value="1">One</option>
+		    <option value="2">Two</option>
+		    <option value="3">Three</option>
+		  </select>
+		  <label for="select_pais">estado.</label>
+		</div>
+		<div class="form-floating p-2">
+
+		  <select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
+		    <option selected>ciudad</option>
+		    <option value="1">One</option>
+		    <option value="2">Two</option>
+		    <option value="3">Three</option>
+		  </select>
+		  <label for="select_pais">ciudad.</label>
+		</div>
+		<div class="container mx-auto" style="width: 200px;">
+			
+			<button type="button" class="btn btn-outline-info">Solicitar información</button>
+		</div>
 
 	</div>
+	<h2>
+		
+	</h2>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		const getEstadoOf = async (idPais) => {
+			/**
+			 * Recibe como parametro el id del pais el cual el usuario quiere ver
+			 * sus estados
+			 * */
+			alert("ahora cargo los estados del pais... con id: " +  idPais);
+		}	
+
+
+		let requestOptions = {
+		  method: 'GET',
+		  redirect: 'follow'
+		};
+		fetch("http://localhost:6969/pais", requestOptions)
+		  .then(response => response.json())
+		  .then(result => {
+		  	const select_pais = document.querySelector('#select_pais');
+		  	//pintando resultados
+		  	result.forEach((pais) =>{
+		  		select_pais.innerHTML += `<option value="${pais.id}">${pais.name}</option>`;
+		  	})
+
+		  	select_pais.addEventListener('change',(e)=>{
+  				console.log("SHOT!")
+  				const idPais = select_pais.value;
+
+  				getEstadoOf(idPais)  
+    		})
+
+		  })
+		  .catch(error => console.log('error', error));
+
+	</script>
 </body>
 </html>
