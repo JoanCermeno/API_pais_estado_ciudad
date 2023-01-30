@@ -12,77 +12,119 @@
 
 	<p class="text-start text">Hola y bienvenido, esta api te proporciona una lista de todos,los países del mundo con sus respectivas estados o regiones. y sus ciudades o pueblos. demás de otras informaciones. API publica creada por Joan Cermeño :)</p>
 	<div class="container w-75 py-2 border rounded" style="background-color: #eee;">
-
+		<div class="container-fluid">
+			<h2>Ejemplo</h2>
+			<div class="spinner"></div>
+		</div>
 		<div class="form-floating p-2 mx-auto">
-
-		  <select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">	
-		    <option selected>Seleccione un pais</option>
-		  </select>
-		  <label for="select_pais">Pais.</label>
+			<select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
+			<option selected>Seleccione un pais</option>
+			</select>
+			<label for="select_pais">País.</label>
 		</div>
 		<div class="form-floating p-2">
 
-		  <select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
-		    <option selected>estado</option>
-		    <option value="1">One</option>
-		    <option value="2">Two</option>
-		    <option value="3">Three</option>
-		  </select>
-		  <label for="select_pais">estado.</label>
+		<select class="form-select form-select-sm" id="select_estado" aria-label="Default select example">
+			<option selected>Seleccione un estado</option>
+
+		</select>
+		<label for="select_pais">estado.</label>
 		</div>
 		<div class="form-floating p-2">
 
-		  <select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
-		    <option selected>ciudad</option>
-		    <option value="1">One</option>
-		    <option value="2">Two</option>
-		    <option value="3">Three</option>
+		  <select class="form-select form-select-sm" id="select_ciudad" aria-label="Default select example">
+		    <option selected>Selecione una ciudad</option>
+		    
 		  </select>
 		  <label for="select_pais">ciudad.</label>
 		</div>
 		<div class="container mx-auto" style="width: 200px;">
-			
 			<button type="button" class="btn btn-outline-info">Solicitar información</button>
 		</div>
 
+
+		<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed/v1/view?zoom=5&center=6.4238,-66.5897&key=public"></iframe> 
+
+
 	</div>
-	<h2>
-		
-	</h2>
+
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 
+		const select_pais = document.querySelector('#select_pais');
+		const select_estado = document.querySelector('#select_estado');
+		const select_ciudad = document.querySelector('#select_ciudad');
+		select_pais.addEventListener('change' , (e) => {
+		  	console.log("buscando estados del pais " +  select_pais.value)
+		  	getEstadoOf(select_pais.value);
+
+		})
+		select_estado.addEventListener('change' , (e) => {
+		  	console.log("buscando cuidades del estado " +  select_estado.value)
+		  	getCitiesOf(select_estado.value,select_pais.value);
+
+		})
+
+		const getCitiesOf = async (idEstado,idPais) =>{
+			/**
+			* This function receives the id of the selected state or region And also idPais. To send to load the list of cities associated with that state or region
+			* */			
+			fetch(`http://<%=host%>:<%=port%>/ciudad?estado_id=${idEstado}&pais_id=${idPais}`)
+				.then((response) => response.json())
+				.then((ciudades) => {
+					select_ciudad.innerHTML = '';
+					let templateHTML = '';
+					ciudades.forEach((ciudad) => {
+						templateHTML += `<option value="${ciudad.id}">${ciudad.name}</option>`;
+					})
+					select_ciudad.innerHTML = templateHTML;
+					console.log("ya cargue las ciudades")
+				})
+				.catch((e) => console.log("hubo un error al pedir las ciudades " + error))
+			console.log("mande a cargar las ciudades")
+		}
+
 		const getEstadoOf = async (idPais) => {
 			/**
-			 * Recibe como parametro el id del pais el cual el usuario quiere ver
-			 * sus estados
+			 * Recibe como parametro el id del pais del cual se quiere buscar
 			 * */
-			alert("ahora cargo los estados del pais... con id: " +  idPais);
+			//limpiamos el select antes de pintar cualquier otra cosa.
+			
+			select_estado.innerHTML = '';
+
+			console.log("funcion get Estado activada...")
+
+			fetch(`http://<%=host%>:<%=port%>/estado?pais_id=${idPais}`)
+				.then((response) => response.json())
+				.then((estados) => {
+					let templateHTML = ''
+					//representadno los resultados
+					estados.forEach((estado) => {
+						templateHTML += `<option value="${estado.id}">${estado.name}</option>`;		
+					})
+
+					select_estado.innerHTML = templateHTML;
+					console.log("LIsto Joan, ya pinte los estados");
+				})
+				.catch((e) => console.log("Error al pedir estados"+e))
 		}	
 
 
-		let requestOptions = {
-		  method: 'GET',
-		  redirect: 'follow'
-		};
-		fetch("http://localhost:6969/pais", requestOptions)
+
+		fetch("http://<%=host%>:<%=port%>/pais")
 		  .then(response => response.json())
 		  .then(result => {
-		  	const select_pais = document.querySelector('#select_pais');
+		  	let templateHTML = '';
 		  	//pintando resultados
 		  	result.forEach((pais) =>{
-		  		select_pais.innerHTML += `<option value="${pais.id}">${pais.name}</option>`;
+		  		templateHTML += `<option value="${pais.id}">${pais.name}</option>`;
 		  	})
 
-		  	select_pais.addEventListener('change',(e)=>{
-  				console.log("SHOT!")
-  				const idPais = select_pais.value;
-
-  				getEstadoOf(idPais)  
-    		})
-
+		  	select_pais.innerHTML = templateHTML;
+		  	
 		  })
 		  .catch(error => console.log('error', error));
 

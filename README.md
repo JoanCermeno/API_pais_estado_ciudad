@@ -7,12 +7,15 @@ A small API that allows you to consult all the countries, states and cities of t
 * nodemon <- oops, this must have been a development dependency XD
 
 # Get Started
-in you dir local run...
-`git clone git@github.com:TheJoan684/API_pais_estado_ciudad.git`
-them
-`npm i`
-once all dependencies are installed. And created our .env file
-We can start everything with...
-`npm run dev`
+Once the repository has been cloned, you must do an 
+`npm install`
+to download the project dependencies, then execute the 
+`npm run dev` command. 
+This will start the server and you will be able to make requests to the following routes...
 
-Remember that I am in the development phase.
+....
+
+# help
+
+For more information about <b>use, and more</b> see you http://localhost:6969/
+<b> Note:If you do not provide a custom host in the .env file, the api will run at http://localhost:8000/ by default</b>
