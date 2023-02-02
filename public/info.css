@@ -13,22 +13,39 @@
 	margin: 0 15%;
 }
 
-.spinner {
-  border: 4px solid rgba(0, 0, 0, .1);
-  border-left-color: transparent;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  animation: spin 1s linear infinite;
+.bar-load {
+  border: 2px solid rgba(0, 0, 0, .4);
+  border-radius: 2px;
+  width: 100%;
+  height: 10px;
+
+}
+.bar-padding{
+  background-color: #08e;
+  height: 10px;
+  box-sizing: border-box;
+  animation: spin 2s infinite;
+  animation-timing-function: easy-in;
+    border-radius: 2px;
+
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
+    width: 0%;
+    margin-left: 0%; 
+  }
+  10%{
+    width: 10%;
   }
 
   100% {
-    transform: rotate(360deg);
+    margin-left: 100%; 
+    width: 8%;
+
   }
 }
 
+.hiden{
+  display: none;
+}

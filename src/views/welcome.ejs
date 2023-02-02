@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="info.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+	<link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+
 	<title>Get Started</title>
 </head>
 <body>
@@ -13,121 +16,65 @@
 	<p class="text-start text">Hola y bienvenido, esta api te proporciona una lista de todos,los países del mundo con sus respectivas estados o regiones. y sus ciudades o pueblos. demás de otras informaciones. API publica creada por Joan Cermeño :)</p>
 	<div class="container w-75 py-2 border rounded" style="background-color: #eee;">
 		<div class="container-fluid">
-			<h2>Ejemplo</h2>
-			<div class="spinner"></div>
+			<h2>Ejemplo</h2> 
 		</div>
 		<div class="form-floating p-2 mx-auto">
+
 			<select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
-			<option selected>Seleccione un pais</option>
+		  		<option selected>--Selecione un Pais--</option>
+
 			</select>
 			<label for="select_pais">País.</label>
+
 		</div>
+
 		<div class="form-floating p-2">
 
-		<select class="form-select form-select-sm" id="select_estado" aria-label="Default select example">
-			<option selected>Seleccione un estado</option>
+			<select class="form-select form-select-sm" id="select_estado" aria-label="Default select example">
+				<option selected value="default">--Selecciona un Estado--</option>
 
-		</select>
-		<label for="select_pais">estado.</label>
+			</select>
+
+			<label for="select_pais">Seleccione un estado
+				<div class="bar-load hiden" id="bar-load-estado">
+					<div class="bar-padding"></div>
+				</div>
+			</label>
+
 		</div>
+
 		<div class="form-floating p-2">
 
 		  <select class="form-select form-select-sm" id="select_ciudad" aria-label="Default select example">
-		    <option selected>Selecione una ciudad</option>
+		  	<option selected value="default">--Selecione una Ciudad--</option>
 		    
 		  </select>
-		  <label for="select_pais">ciudad.</label>
+		  <label for="select_pais"> Ciudades 
+			<div class="bar-load hiden" id="bar-load-ciudad">
+				<div class="bar-padding"></div>
+			</div>
+		  </label>
+
+
 		</div>
+
 		<div class="container mx-auto" style="width: 200px;">
-			<button type="button" class="btn btn-outline-info">Solicitar información</button>
+			<button type="button" id="btnGetInfo" class="btn btn-outline-info">Solicitar información</button>
 		</div>
 
-
-		<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-src="https://www.google.com/maps/embed/v1/view?zoom=5&center=6.4238,-66.5897&key=public"></iframe> 
+		<section class="container-fluid d-none mt-5 " id="section-map">
+			<div class="hiden mx-auto " id='map' style='width: 400px; height: 300px;'></div>
+			<span class="badge text-bg-info" id="badge-lng">Longitud: </span>
+			<span class="badge text-bg-info" id="badge-lat">Latitud: </span>
+		
+		</section>
 
 
 	</div>
 
 
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-
-		const select_pais = document.querySelector('#select_pais');
-		const select_estado = document.querySelector('#select_estado');
-		const select_ciudad = document.querySelector('#select_ciudad');
-		select_pais.addEventListener('change' , (e) => {
-		  	console.log("buscando estados del pais " +  select_pais.value)
-		  	getEstadoOf(select_pais.value);
-
-		})
-		select_estado.addEventListener('change' , (e) => {
-		  	console.log("buscando cuidades del estado " +  select_estado.value)
-		  	getCitiesOf(select_estado.value,select_pais.value);
-
-		})
-
-		const getCitiesOf = async (idEstado,idPais) =>{
-			/**
-			* This function receives the id of the selected state or region And also idPais. To send to load the list of cities associated with that state or region
-			* */			
-			fetch(`http://<%=host%>:<%=port%>/ciudad?estado_id=${idEstado}&pais_id=${idPais}`)
-				.then((response) => response.json())
-				.then((ciudades) => {
-					select_ciudad.innerHTML = '';
-					let templateHTML = '';
-					ciudades.forEach((ciudad) => {
-						templateHTML += `<option value="${ciudad.id}">${ciudad.name}</option>`;
-					})
-					select_ciudad.innerHTML = templateHTML;
-					console.log("ya cargue las ciudades")
-				})
-				.catch((e) => console.log("hubo un error al pedir las ciudades " + error))
-			console.log("mande a cargar las ciudades")
-		}
-
-		const getEstadoOf = async (idPais) => {
-			/**
-			 * Recibe como parametro el id del pais del cual se quiere buscar
-			 * */
-			//limpiamos el select antes de pintar cualquier otra cosa.
-			
-			select_estado.innerHTML = '';
-
-			console.log("funcion get Estado activada...")
-
-			fetch(`http://<%=host%>:<%=port%>/estado?pais_id=${idPais}`)
-				.then((response) => response.json())
-				.then((estados) => {
-					let templateHTML = ''
-					//representadno los resultados
-					estados.forEach((estado) => {
-						templateHTML += `<option value="${estado.id}">${estado.name}</option>`;		
-					})
-
-					select_estado.innerHTML = templateHTML;
-					console.log("LIsto Joan, ya pinte los estados");
-				})
-				.catch((e) => console.log("Error al pedir estados"+e))
-		}	
-
-
-
-		fetch("http://<%=host%>:<%=port%>/pais")
-		  .then(response => response.json())
-		  .then(result => {
-		  	let templateHTML = '';
-		  	//pintando resultados
-		  	result.forEach((pais) =>{
-		  		templateHTML += `<option value="${pais.id}">${pais.name}</option>`;
-		  	})
-
-		  	select_pais.innerHTML = templateHTML;
-		  	
-		  })
-		  .catch(error => console.log('error', error));
-
-	</script>
+	<script type="text/javascript" src="http://<%=host%>:<%=port%>/selectSearch.js"></script>
+	<script type="text/javascript" src="http://<%=host%>:<%=port%>/showMap.js"></script>
 </body>
 </html>
