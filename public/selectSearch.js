@@ -40,6 +40,8 @@ const getCitiesOf = async (idEstado, idPais) => {
 			ciudades.forEach((ciudad) => {
 				templateHTML += `<option value="${ciudad.id}">${ciudad.name}</option>`;
 			})
+			select_ciudad.innerHTML = '<option selected value="default">--Selecione una Ciudad--</option>';
+
 			select_ciudad.innerHTML += templateHTML;
 			barLoadCiudad.hiden();
 
@@ -64,6 +66,7 @@ const getEstadoOf = async (idPais) => {
 			estados.forEach((estado) => {
 				templateHTML += `<option value="${estado.id}">${estado.name}</option>`;
 			})
+			select_estado.innerHTML = '<option selected value="default">--Selecione un Estado--</option>';
 			select_estado.innerHTML += templateHTML;
 			//Listo eSTADOS CARGADOS CON EXITO
 			barLoadEstado.hiden();
@@ -82,7 +85,7 @@ fetch(`${URLactual}pais`)
 		result.forEach((pais) => {
 			templateHTML += `<option value="${pais.id}">${pais.name}</option>`;
 		})
-
+		select_pais.innerHTML = '<option selected value="default">--Selecione un Pais--</option>';
 		select_pais.innerHTML += templateHTML;
 
 	})

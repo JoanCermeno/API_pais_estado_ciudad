@@ -9,7 +9,7 @@ class UIelement {
 		this.elementHTML.classList.add('hiden');
 	}
 	write(texto){
-		this.elementHTML.innerHTML += texto;
+		this.elementHTML.innerHTML = texto;
 	}
 }
 
@@ -18,6 +18,8 @@ const btn = document.querySelector('#btnGetInfo');
 const badgeLng = new UIelement('#badge-lng');
 const badgeLat = new UIelement('#badge-lat');
 const sectionMap = document.querySelector('#section-map');
+const linkGoogleMaps = document.createElement("a");
+
 
 btn.addEventListener( 'click', e =>{
 	//primero desactivamos el boton hasta que se procese la primera solicitud!
@@ -26,9 +28,9 @@ btn.addEventListener( 'click', e =>{
 	const pais_id = select_pais.value;
 	const estado_id = select_estado.value;
 	const ciudad_id = select_ciudad.value;
+
 	//mostrando el contenedor del mapa
 	sectionMap.classList.remove('d-none');
-	
 	//make a request to server...
 	fetch(`${URLactual}ciudad?ciudad_id=${ciudad_id}`)
 		.then((response) => response.json())
@@ -51,21 +53,24 @@ btn.addEventListener( 'click', e =>{
 		  	.setLngLat([lng, lat])
 		  	.addTo(map);
 			theMap.show();
-			badgeLng.write(lng);
-			badgeLat.write(lat);
+			badgeLng.write(`Longutid: ${lng}`);
+			badgeLat.write(`Latitud: ${lat}`);
 
 			btn.disabled = false;
 
 			//show metada
-			const linkGoogleMaps = document.createElement("a");
-			linkGoogleMaps.href = `https://www.google.com/maps/place/${ciudad.name} ${}`;
+			//Get data of imput select for send to googleMap
+			const estadoName = select_estado.options[select_estado.selectedIndex].text;
+			const paisName = select_pais.options[select_pais.selectedIndex].text;
+			const ciudadName = select_ciudad.options[select_ciudad.selectedIndex].text;
+			linkGoogleMaps.href = `https://www.google.com/maps/place/${ciudad.name} ${estadoName} ${paisName}`;
 			linkGoogleMaps.target = "_blank"
-			linkGoogleMaps.innerHTML = "Ver En GoogleMaps";
-
+			linkGoogleMaps.innerHTML = "Ver En Google Maps";
 			sectionMap.appendChild(linkGoogleMaps);
+			//Consultado datos en la wikipedia
+			callWikipedia(paisName,estadoName,ciudadName);
 			
-		})
-		.catch((e) => console.log("Error" + e))
+		}).catch((e) => console.log("Error" + e))
 });
 
 

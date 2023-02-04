@@ -7,11 +7,10 @@ router.get('/', async (req, res) => {
 	const {	estado_id, pais_id , ciudad_id } = req.query;
 	if(ciudad_id){
 		
-		const ciudad = await Query.findById(ciudad_id).join('regions', 'cities.id', 'regions.id')
-      	.select('cities.id as id_ciudad' , 'latitude' ,'longitude','regions.name as estado_name',
-      		'cities.name as ciudad_name')
+		const ciudad = await Query.findById(ciudad_id)
 
 		console.log("se solicito una sola ciudad")
+		console.log(ciudad);
 		return res.send(ciudad);
 	}
 
