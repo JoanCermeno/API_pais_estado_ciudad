@@ -9,6 +9,16 @@ A small API that allows you to consult all the countries, states and cities of t
 # Get Started
 Once the repository has been cloned, you must do an 
 `npm install`
+Now you must download the database. from the following link. as the sql file is a bit heavy. I hosted it in google driver
+<a href="https://drive.google.com/file/d/1m4TIBFPlIZPmynR9JjDTtHootvQwVGH6/view?usp=share_link"> the magic File sql xD </a>
+
+before of start the application. Import in your client mysql a new databases called "world". or 
+if you are using Lampp or Xampp Go to <a>/opt/lampp/bin/mariadb</a> this for linux. on windows  you executed xampp and in the CLI type this...
+
+`source > seed/world.sql`
+note: run that in you root directory proyect... 
+await. this sql insert all tables and data nesesary...
+
 to download the project dependencies, then execute the 
 `npm run dev` command. 
 This will start the server and you will be able to make requests to the following routes...

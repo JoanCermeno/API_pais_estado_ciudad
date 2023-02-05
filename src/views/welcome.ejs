@@ -10,13 +10,16 @@
 
 	<title>Get Started</title>
 </head>
-<body>
-	<h2 class="main_title">DEMO PAISES ESTADOS Y CUIDADES</h2>
+<body class="bg-gradiente-vice-city">
+	<h2 class="main_title mt-5 text-light">The World.</h2>
 
-	<p class="text-start text">Hola y bienvenido, esta api te proporciona una lista de todos,los países del mundo con sus respectivas estados o regiones. y sus ciudades o pueblos. demás de otras informaciones. API publica creada por Joan Cermeño :)</p>
-	<div class="container w-75 py-2 border rounded" style="background-color: #eee;">
-		<div class="container-fluid">
-			<h2>Ejemplo</h2> 
+	<p class="text-start text text-light my-4 fs-6">Hola y bienvenido, esta api te proporciona una lista de todos,los países del mundo con sus respectivas estados o regiones. y sus ciudades o pueblos. demás de otras informaciones. API publica creada por Joan Cermeño </p>
+	<div class="container d-flex justify-content-center">
+		<span class="text-center text-light fs-1">{🌎}</span>	
+	</div>
+	<div class="container w-75 py-2 border rounded bg-light">
+		<div class="container d-flex justify-content-center">
+			<h2 class="fs-2">Ejemplo</h2> 
 		</div>
 		<div class="form-floating p-2 mx-auto">
 
@@ -62,21 +65,27 @@
 			<button type="button" id="btnGetInfo" class="btn btn-outline-info">Solicitar información</button>
 		</div>
 
-		<section class="container-fluid d-none mt-5 " id="section-map">
-			<article class="container-fluid" id="article_description">
+		<section class="container d-none d-flex flex-column align-items-center  mt-5 " id="section-map">
 
+			<article class="container" id="article_description">
+				<div class="bar-load hiden" id="bar-load-metada">
+					<div class="bar-padding"></div>
+				</div>
 			</article>
 
 
-			<div class="hiden mx-auto " id='map' style='width: 400px; height: 300px;'></div>
-			<span class="badge text-bg-info" id="badge-lng"></span>
-			<span class="badge text-bg-info" id="badge-lat"></span>
-		
+			<div class="hiden mx-auto mb-5" id='map' style='width: 400px; height: 300px;'></div>
+			<section id="bottom-container-map" class="container d-flex justify-content-evenly">
+				
+				<span class="badge text-bg-info mb-5 text-light" id="badge-lng"></span>
+				<span class="badge text-bg-info mb-5 text-light" id="badge-lat"></span>
+	
+
+			</section>		
 		</section>
 
 
 	</div>
-
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="http://<%=host%>:<%=port%>/selectSearch.js"></script>

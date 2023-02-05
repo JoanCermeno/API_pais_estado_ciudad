@@ -1,4 +1,5 @@
 let articuloDes = document.querySelector('#article_description');
+const barLoadMetada = document.querySelector('#bar-load-metada');
 const notFound = "Datos no encontrados..."
 const callWikipedia = async (pais,estado,ciudad)=>{
 	/**
@@ -7,13 +8,14 @@ const callWikipedia = async (pais,estado,ciudad)=>{
 	**/
 
 	const getinfo = async (arg) => {
-	
+		barLoadMetada.classList.remove('hiden');
 		const responseWipedia = await fetch(`https://es.wikipedia.org/w/api.php?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=`+arg)
 		const data = await responseWipedia.json();
 		//extayendo el primer resultado de la wikipedia;
 		const info = data.query.search[0];
 		//console.log(infoPais); snippet pageid
 		console.log(data);
+		barLoadMetada.classList.add('hiden');
 		return info;
 	}
 
@@ -31,8 +33,8 @@ const callWikipedia = async (pais,estado,ciudad)=>{
 	}
 
 	articuloDes.innerHTML = `
-	<h2>Pais: ${pais}</h2> <p>${infoPais.snippet} <a href="https://es.wikipedia.org/?curid=${infoPais.pageid}" target="_blank"> Seguir leyendo en wikipedia </a></p>
-	<h2>Estado: ${estado}</h2><p>${infoEstado.snippet}<a href="https://es.wikipedia.org/?curid=${infoEstado.pageid} target="_blank""> Seguir leyendo en wikipedia</a></p>
-	<h2>Ciudad: ${ciudad} </h2> <p>${infoCiudad.snippet}<a href="https://es.wikipedia.org/?curid=${infoCiudad.pageid} target="_blank""> Leer mas en wikipedia </a></p>`;
+	<h2>${pais}</h2><p>${infoPais.snippet} <a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoPais.pageid}" target="_blank"> Seguir leyendo en wikipedia </a></p>
+	<h2>${estado}</h2><p>${infoEstado.snippet}<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoEstado.pageid}" target="_blank"> Seguir leyendo en wikipedia</a></p>
+	<h2>${ciudad} </h2><p>${infoCiudad.snippet}<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoCiudad.pageid}" target="_blank"> Seguir leyendo en wikipedia </a></p>`;
 
 }

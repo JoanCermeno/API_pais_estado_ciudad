@@ -1,4 +1,9 @@
 you must specify the api port
 
 //for example :)
-PORT=8080
+PORT = 6969
+DB_DEV_HOST = "localhost"
+DB_DEV_PORT = 3306
+DB_DEV_USER = 'root'
+DB_DEV_PASS = 
+DB_DEV_NAME = 'world'

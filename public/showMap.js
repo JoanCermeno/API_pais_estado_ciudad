@@ -18,8 +18,8 @@ const btn = document.querySelector('#btnGetInfo');
 const badgeLng = new UIelement('#badge-lng');
 const badgeLat = new UIelement('#badge-lat');
 const sectionMap = document.querySelector('#section-map');
+const bottom_map = document.querySelector('#bottom-container-map');
 const linkGoogleMaps = document.createElement("a");
-
 
 btn.addEventListener( 'click', e =>{
 	//primero desactivamos el boton hasta que se procese la primera solicitud!
@@ -64,13 +64,18 @@ btn.addEventListener( 'click', e =>{
 			const paisName = select_pais.options[select_pais.selectedIndex].text;
 			const ciudadName = select_ciudad.options[select_ciudad.selectedIndex].text;
 			linkGoogleMaps.href = `https://www.google.com/maps/place/${ciudad.name} ${estadoName} ${paisName}`;
-			linkGoogleMaps.target = "_blank"
+			linkGoogleMaps.target = "_blank";
+			linkGoogleMaps.classList.add('link-info')
 			linkGoogleMaps.innerHTML = "Ver En Google Maps";
-			sectionMap.appendChild(linkGoogleMaps);
+			bottom_map.appendChild(linkGoogleMaps);
 			//Consultado datos en la wikipedia
 			callWikipedia(paisName,estadoName,ciudadName);
 			
-		}).catch((e) => console.log("Error" + e))
+		}).catch((e) =>{ 
+			btn.disabled = false;
+			alert("Uy Intenta de nuevo, algo salio mal")
+			console.log("Error" + e)
+		})
 });
 
 
