@@ -15,8 +15,8 @@ Now you must download the database. from the following link. as the sql file is 
 before of start the application. Import in your client mysql a new databases called "world". or 
 if you are using Lampp or Xampp Go to <a>/opt/lampp/bin/mariadb</a> this for linux. on windows  you executed xampp and in the CLI type this...
 
-`source > seed/world.sql`
-note: run that in you root directory proyect... 
+`source > world.sql`
+note: you must specify the path of the sql file.
 await. this sql insert all tables and data nesesary...
 
 to download the project dependencies, then execute the 
