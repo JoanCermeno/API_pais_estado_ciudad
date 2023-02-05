@@ -1,0 +1,1873 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"infini",
+				"infinite"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"text-",
+				"text-light"
+			],
+			[
+				"tex",
+				"text-light"
+			],
+			[
+				"text",
+				"text-bg-info"
+			],
+			[
+				"sn",
+				"snippet"
+			],
+			[
+				"info",
+				"infoCiudad"
+			],
+			[
+				"conso",
+				"console.log"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"sele",
+				"select_pais"
+			],
+			[
+				"ine",
+				"innerHTML"
+			],
+			[
+				"bad",
+				"badge-lat"
+			],
+			[
+				"badge",
+				"badge-lng"
+			],
+			[
+				"the",
+				"theMap"
+			],
+			[
+				"ci",
+				"ciudad"
+			],
+			[
+				"ciuda",
+				"ciudad"
+			],
+			[
+				"anim",
+				"animation-timing-function"
+			],
+			[
+				"animati",
+				"animation-timing-function"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"bar",
+				"barLoadEstado"
+			],
+			[
+				"bar-load",
+				"bar-load-ciudad"
+			],
+			[
+				"bare",
+				"barLoadEstado"
+			],
+			[
+				"cons",
+				"console.log(\"ya"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"e",
+				"revert"
+			],
+			[
+				"anmi",
+				"animation-timing-function"
+			],
+			[
+				"wh",
+				"width"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"reve",
+				"alternate-reverse"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"h",
+				"width"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"inve",
+				"invert()"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"a",
+				"align-items"
+			],
+			[
+				"ital",
+				"initial"
+			],
+			[
+				"cu",
+				"cursive"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"fotn",
+				"font-size"
+			],
+			[
+				"whi",
+				"width"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"background-position",
+				"background-position-y"
+			],
+			[
+				"p",
+				"piter.jpg"
+			],
+			[
+				"unefa",
+				"unefa-history.jpeg"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"red",
+				"darkred"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"va",
+				"validar_credenciales"
+			],
+			[
+				"lis",
+				"list_usuarios_autorizados"
+			],
+			[
+				"js",
+				"index.js"
+			],
+			[
+				"pla",
+				"placeholder"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"marin",
+				"margin"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"fl",
+				"flex-direction"
+			],
+			[
+				"ju",
+				"justify-content"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"padin",
+				"padding"
+			],
+			[
+				"fo",
+				"footer"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"regi",
+				"regions"
+			],
+			[
+				"get",
+				"getCitiesOf"
+			],
+			[
+				"selec",
+				"select_ciudad"
+			],
+			[
+				"see",
+				"select_pais"
+			],
+			[
+				"ad",
+				"addEventListener"
+			],
+			[
+				"se",
+				"select_pais"
+			],
+			[
+				"ciu",
+				"ciudad"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"pai",
+				"pais_id"
+			],
+			[
+				"est",
+				"estado"
+			],
+			[
+				"id",
+				"idPais"
+			],
+			[
+				"conte",
+				"align-content"
+			],
+			[
+				"aline",
+				"align-items"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"node",
+				"node_modules"
+			],
+			[
+				"le",
+				"lector"
+			],
+			[
+				"c",
+				"createReadStream"
+			],
+			[
+				"crea",
+				"createReadStream"
+			],
+			[
+				"consoe",
+				"console.log(\"Tenemos"
+			],
+			[
+				"lin",
+				"lineByLine"
+			],
+			[
+				"read",
+				"readLine"
+			],
+			[
+				"rea",
+				"readLine"
+			],
+			[
+				"cre",
+				"createNewFile"
+			],
+			[
+				"da",
+				"dataFileFrom"
+			],
+			[
+				"bu",
+				"bufferFileTo"
+			],
+			[
+				"b",
+				"bufferFileFrom"
+			],
+			[
+				"file",
+				"fileTo"
+			],
+			[
+				"nue",
+				"nuevos_datos.txt"
+			],
+			[
+				"fal",
+				"fail"
+			],
+			[
+				"fa",
+				"fail"
+			],
+			[
+				"fi",
+				"fileFrom"
+			],
+			[
+				"Log",
+				"LogSuccess"
+			],
+			[
+				"Hello",
+				"iHelloController"
+			],
+			[
+				"log",
+				"getLogger"
+			],
+			[
+				"t",
+				"types/"
+			],
+			[
+				"Qu",
+				"Query"
+			],
+			[
+				"que",
+				"Query"
+			],
+			[
+				"loca",
+				"local"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"inde",
+				"index.js"
+			],
+			[
+				"confi",
+				"config"
+			],
+			[
+				"do",
+				"dotenv"
+			],
+			[
+				"expres",
+				"express"
+			],
+			[
+				"dot",
+				"dotenv"
+			],
+			[
+				"nuevo",
+				"nuevoObjeto"
+			],
+			[
+				"num",
+				"numeroM"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"br",
+				"break"
+			],
+			[
+				"numero",
+				"numeroDeDia"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/views/welcome.ejs",
+			"settings":
+			{
+				"buffer_size": 3633,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAABxDAAAPCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+Cgk8bWV0YSBjaGFyc2V0PSJ1dGYtOCI+Cgk8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEiPgoJPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaW5mby5jc3MiPgoJPGxpbmsgaHJlZj0iaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L25wbS9ib290c3RyYXBANS4zLjAtYWxwaGExL2Rpc3QvY3NzL2Jvb3RzdHJhcC5taW4uY3NzIiByZWw9InN0eWxlc2hlZXQiIGludGVncml0eT0ic2hhMzg0LUdMaGxUUThpUkFCZFpMbDZPM29WTVdTa3RRT3A2YjdJbjFabDMvSnI1OWI2RUdHb0kxYUZrdzdjbURBNmo2Z0QiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPgoJPHNjcmlwdCBzcmM9J2h0dHBzOi8vdW5wa2cuY29tL21hcGxpYnJlLWdsQDIuNC4wL2Rpc3QvbWFwbGlicmUtZ2wuanMnPjwvc2NyaXB0PgoJPGxpbmsgaHJlZj0naHR0cHM6Ly91bnBrZy5jb20vbWFwbGlicmUtZ2xAMi40LjAvZGlzdC9tYXBsaWJyZS1nbC5jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz4KCgk8dGl0bGU+R2V0IFN0YXJ0ZWQ8L3RpdGxlPgo8L2hlYWQ+Cjxib2R5PgoJPGgyIGNsYXNzPSJtYWluX3RpdGxlIj5ERU1PIFBBSVNFUyBFU1RBRE9TIFkgQ1VJREFERVM8L2gyPgoKCTxwIGNsYXNzPSJ0ZXh0LXN0YXJ0IHRleHQiPkhvbGEgeSBiaWVudmVuaWRvLCBlc3RhIGFwaSB0ZSBwcm9wb3JjaW9uYSB1bmEgbGlzdGEgZGUgdG9kb3MsbG9zIHBhw61zZXMgZGVsIG11bmRvIGNvbiBzdXMgcmVzcGVjdGl2YXMgZXN0YWRvcyBvIHJlZ2lvbmVzLiB5IHN1cyBjaXVkYWRlcyBvIHB1ZWJsb3MuIGRlbcOhcyBkZSBvdHJhcyBpbmZvcm1hY2lvbmVzLiBBUEkgcHVibGljYSBjcmVhZGEgcG9yIEpvYW4gQ2VybWXDsW8gOik8L3A+Cgk8ZGl2IGNsYXNzPSJjb250YWluZXIgdy03NSBweS0yIGJvcmRlciByb3VuZGVkIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogI2VlZTsiPgoJCTxkaXYgY2xhc3M9ImNvbnRhaW5lci1mbHVpZCI+CgkJCTxoMj5FamVtcGxvPC9oMj4gCgkJPC9kaXY+CgkJPGRpdiBjbGFzcz0iZm9ybS1mbG9hdGluZyBwLTIgbXgtYXV0byI+CgoJCQk8c2VsZWN0IGNsYXNzPSJmb3JtLXNlbGVjdCBmb3JtLXNlbGVjdC1zbSIgaWQ9InNlbGVjdF9wYWlzIiBhcmlhLWxhYmVsPSJEZWZhdWx0IHNlbGVjdCBleGFtcGxlIj4KCQkgIAkJPG9wdGlvbiBzZWxlY3RlZD4tLVNlbGVjaW9uZSB1biBQYWlzLS08L29wdGlvbj4KCgkJCTwvc2VsZWN0PgoJCQk8bGFiZWwgZm9yPSJzZWxlY3RfcGFpcyI+UGHDrXMuPC9sYWJlbD4KCgkJPC9kaXY+CgoJCTxkaXYgY2xhc3M9ImZvcm0tZmxvYXRpbmcgcC0yIj4KCgkJCTxzZWxlY3QgY2xhc3M9ImZvcm0tc2VsZWN0IGZvcm0tc2VsZWN0LXNtIiBpZD0ic2VsZWN0X2VzdGFkbyIgYXJpYS1sYWJlbD0iRGVmYXVsdCBzZWxlY3QgZXhhbXBsZSI+CgkJCQk8b3B0aW9uIHNlbGVjdGVkIHZhbHVlPSJkZWZhdWx0Ij4tLVNlbGVjY2lvbmEgdW4gRXN0YWRvLS08L29wdGlvbj4KCgkJCTwvc2VsZWN0PgoKCQkJPGxhYmVsIGZvcj0ic2VsZWN0X3BhaXMiPlNlbGVjY2lvbmUgdW4gZXN0YWRvCgkJCQk8ZGl2IGNsYXNzPSJiYXItbG9hZCBoaWRlbiIgaWQ9ImJhci1sb2FkLWVzdGFkbyI+CgkJCQkJPGRpdiBjbGFzcz0iYmFyLXBhZGRpbmciPjwvZGl2PgoJCQkJPC9kaXY+CgkJCTwvbGFiZWw+CgoJCTwvZGl2PgoKCQk8ZGl2IGNsYXNzPSJmb3JtLWZsb2F0aW5nIHAtMiI+CgoJCSAgPHNlbGVjdCBjbGFzcz0iZm9ybS1zZWxlY3QgZm9ybS1zZWxlY3Qtc20iIGlkPSJzZWxlY3RfY2l1ZGFkIiBhcmlhLWxhYmVsPSJEZWZhdWx0IHNlbGVjdCBleGFtcGxlIj4KCQkgIAk8b3B0aW9uIHNlbGVjdGVkIHZhbHVlPSJkZWZhdWx0Ij4tLVNlbGVjaW9uZSB1bmEgQ2l1ZGFkLS08L29wdGlvbj4KCQkgICAgCgkJICA8L3NlbGVjdD4KCQkgIDxsYWJlbCBmb3I9InNlbGVjdF9wYWlzIj4gQ2l1ZGFkZXMgCgkJCTxkaXYgY2xhc3M9ImJhci1sb2FkIGhpZGVuIiBpZD0iYmFyLWxvYWQtY2l1ZGFkIj4KCQkJCTxkaXYgY2xhc3M9ImJhci1wYWRkaW5nIj48L2Rpdj4KCQkJPC9kaXY+CgkJICA8L2xhYmVsPgoKCgkJPC9kaXY+CgoJCTxkaXYgY2xhc3M9ImNvbnRhaW5lciBteC1hdXRvIiBzdHlsZT0id2lkdGg6IDIwMHB4OyI+CgkJCTxidXR0b24gdHlwZT0iYnV0dG9uIiBpZD0iYnRuR2V0SW5mbyIgY2xhc3M9ImJ0biBidG4tb3V0bGluZS1pbmZvIj5Tb2xpY2l0YXIgaW5mb3JtYWNpw7NuPC9idXR0b24+CgkJPC9kaXY+CgoJCTxzZWN0aW9uIGNsYXNzPSJjb250YWluZXItZmx1aWQgZC1ub25lIG10LTUgIiBpZD0ic2VjdGlvbi1tYXAiPgoJCQk8YXJ0aWNsZSBjbGFzcz0iY29udGFpbmVyLWZsdWlkIiBpZD0iYXJ0aWNsZV9kZXNjcmlwdGlvbiI+CgoJCQk8L2FydGljbGU+CgoKCQkJPGRpdiBjbGFzcz0iaGlkZW4gbXgtYXV0byAiIGlkPSdtYXAnIHN0eWxlPSd3aWR0aDogNDAwcHg7IGhlaWdodDogMzAwcHg7Jz48L2Rpdj4KCQkJPHNwYW4gY2xhc3M9ImJhZGdlIHRleHQtYmctaW5mbyIgaWQ9ImJhZGdlLWxuZyI+PC9zcGFuPgoJCQk8c3BhbiBjbGFzcz0iYmFkZ2UgdGV4dC1iZy1pbmZvIiBpZD0iYmFkZ2UtbGF0Ij48L3NwYW4+CgkJCgkJPC9zZWN0aW9uPgoKCgk8L2Rpdj4KCgoJPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vYm9vdHN0cmFwQDUuMy4wLWFscGhhMS9kaXN0L2pzL2Jvb3RzdHJhcC5idW5kbGUubWluLmpzIiBpbnRlZ3JpdHk9InNoYTM4NC13NzZBcVBmRGtNQkRYbzMwalMxU2dlejZwcjN4NU1sUTFaQUdDK251WkIrRVlkZ1JaZ2l3eGhUQlRrRjdDWHZOIiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly88JT1ob3N0JT46PCU9cG9ydCU+L3NlbGVjdFNlYXJjaC5qcyI+PC9zY3JpcHQ+Cgk8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vPCU9aG9zdCU+OjwlPXBvcnQlPi9zaG93TWFwLmpzIj48L3NjcmlwdD4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly88JT1ob3N0JT46PCU9cG9ydCU+L3JlcVdpa2lwZWRpYS5qcyI+PC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPgoAAAAAAAAAADEOAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1451,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAALcDAAAAAAAAtwMAAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					2,
+					"right_delete",
+					null,
+					"AgAAALcDAAAAAAAAtwMAAAAAAAABAAAAL7cDAAAAAAAAtwMAAAAAAAABAAAAdw",
+					"AQAAAAAAAAABAAAAtwMAAAAAAAC3AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					3,
+					"left_delete",
+					null,
+					"AwAAALYDAAAAAAAAtgMAAAAAAAABAAAAZbUDAAAAAAAAtQMAAAAAAAABAAAAZbQDAAAAAAAAtAMAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAtwMAAAAAAAC3AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "w"
+					},
+					"AQAAALQDAAAAAAAAtQMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtAMAAAAAAAC0AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMQDAAAAAAAAxQMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAMAAAAAAADEAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMQDAAAAAAAAxQMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAMAAAAAAADEAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"right_delete",
+					null,
+					"AQAAAMUDAAAAAAAAxQMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAxQMAAAAAAADFAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "you"
+					},
+					"AwAAAMUDAAAAAAAAxgMAAAAAAAAAAAAAxgMAAAAAAADHAwAAAAAAAAAAAADHAwAAAAAAAMgDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQMAAAAAAADFAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					3,
+					"left_delete",
+					null,
+					"AwAAAMcDAAAAAAAAxwMAAAAAAAABAAAAdcYDAAAAAAAAxgMAAAAAAAABAAAAb8UDAAAAAAAAxQMAAAAAAAABAAAAeQ",
+					"AQAAAAAAAAABAAAAyAMAAAAAAADIAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"",
+					null,
+					"AQAAAMUDAAAAAAAA7gMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQMAAAAAAADFAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAO4DAAAAAAAA7wMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7gMAAAAAAADuAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					3,
+					"left_delete",
+					null,
+					"AwAAAPADAAAAAAAA8AMAAAAAAAAqAAAAcnVuIHRoYXQgaW4geW91IHJvb3QgZGlyZWN0b3J5IHByb3llY3QuLi4g7wMAAAAAAADvAwAAAAAAAAEAAAAg7gMAAAAAAADuAwAAAAAAAAEAAAAs",
+					"AQAAAAAAAAABAAAAGgQAAAAAAADwAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAO4DAAAAAAAA7wMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7gMAAAAAAADuAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"tem",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"temirna",
+				"Terminus Utilities: Generate User Theme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"Code Folding: Fold"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"termi",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"terminu",
+				"Terminus Utilities: Select Theme"
+			],
+			[
+				"termin",
+				"Preferences: Terminus Key Bindings"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"temin",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"ti",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"to",
+				"Toggle Comment"
+			],
+			[
+				"o",
+				"Terminal: Open"
+			],
+			[
+				"temi",
+				"Terminal: Open"
+			],
+			[
+				"vie",
+				"View Package File"
+			],
+			[
+				"come",
+				"Toggle Comment"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"Terminal: Open"
+			],
+			[
+				"co",
+				"Toggle Comment"
+			],
+			[
+				"termina",
+				"Terminal: Open"
+			],
+			[
+				"te",
+				"Terminal: Open"
+			],
+			[
+				"opte",
+				"Terminal: Open in project folder"
+			],
+			[
+				"temrin",
+				"Terminal: Open"
+			],
+			[
+				"live se",
+				"Preferences: Live Server Settings"
+			],
+			[
+				"liver",
+				"Live Server: Stop"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"post",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"emo",
+				"BracketHighlighter: Enable Debug Mode"
+			],
+			[
+				"hil",
+				"BracketHighlighter: Swap Settings"
+			],
+			[
+				"live",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"r",
+				"Package Control: Remove Package"
+			],
+			[
+				"font",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"COLO",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ope",
+				"Terminal: Open"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"op",
+				"Terminal: Open"
+			],
+			[
+				"t",
+				"Terminal: Open"
+			],
+			[
+				"temir",
+				"Preferences: Terminal Settings – User"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"cus",
+				"UI: Customize Theme"
+			],
+			[
+				"ay",
+				"ayu: Activate theme"
+			],
+			[
+				"setti",
+				"Preferences: Settings"
+			],
+			[
+				"teme",
+				"UI: Select Theme"
+			],
+			[
+				"togl",
+				"Toggle Comment"
+			],
+			[
+				"c",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"a",
+				"Arithmetic"
+			],
+			[
+				"insal",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"custom",
+				"UI: Customize Theme"
+			],
+			[
+				"th",
+				"UI: Select Theme"
+			],
+			[
+				"view",
+				"View Package File"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"seting",
+				"Preferences: Settings"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"tehe",
+				"UI: Customize Theme"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"mateira",
+				"Activate Materialize Theme"
+			],
+			[
+				"tehem",
+				"UI: Customize Theme"
+			],
+			[
+				"tab",
+				"⌬ tabnine: Open Configuration"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"opne",
+				"Terminal: Open"
+			],
+			[
+				"set Syjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"aj",
+				"Format: Javascript"
+			],
+			[
+				"conos",
+				"Set Syntax: R Console"
+			],
+			[
+				"temri",
+				"Terminal: Open"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"file",
+				"Preferences: A File Icon Settings"
+			],
+			[
+				"custo",
+				"UI: Customize Theme"
+			],
+			[
+				"u",
+				"UI: Customize Theme"
+			],
+			[
+				"mat",
+				"Activate Materialize Theme"
+			],
+			[
+				"activa",
+				"ayu: Activate theme"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"rai",
+				"RainbowBrackets: Clear Color Schemes"
+			],
+			[
+				"mak",
+				"RainbowBrackets: Make Rainbow"
+			],
+			[
+				"materia",
+				"Activate Materialize Theme"
+			],
+			[
+				"ma",
+				"RainbowBrackets: Make Rainbow"
+			],
+			[
+				"Rainbow",
+				"RainbowBrackets: Clear Rainbow"
+			],
+			[
+				"m",
+				"RainbowBrackets: Make Rainbow"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"maki",
+				"RainbowBrackets: Make Rainbow"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"teminal",
+				"Terminal: Open"
+			],
+			[
+				"icon",
+				"Preferences: A File Icon Settings"
+			],
+			[
+				"make",
+				"RainbowBrackets: Make Rainbow"
+			],
+			[
+				"matei",
+				"Activate Materialize Theme"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"togle",
+				"Toggle Comment"
+			],
+			[
+				"BLOCK",
+				"Toggle Block Comment"
+			],
+			[
+				"npm",
+				"NPM: Open Documentation"
+			],
+			[
+				"temrinal",
+				"Terminal: Open"
+			],
+			[
+				"uit",
+				"UI: Customize Theme"
+			],
+			[
+				"RainbowBrackets",
+				"RainbowBrackets: Close Plugin"
+			],
+			[
+				"terminal",
+				"Terminal: Open"
+			],
+			[
+				"tema",
+				"Preferences: Terminus Command Palette"
+			],
+			[
+				"temr",
+				"Terminal: Open"
+			],
+			[
+				"ui:Co",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui:t",
+				"UI: Select Theme"
+			],
+			[
+				"ui:co",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui:T",
+				"UI: Select Theme"
+			],
+			[
+				"UI:t",
+				"Build: New Build System"
+			],
+			[
+				"ui:",
+				"UI: Select Theme"
+			],
+			[
+				"UI:colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"uite",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ra",
+				"RainbowBrackets: Make Rainbow"
+			],
+			[
+				"uico",
+				"UI: Select Color Scheme"
+			],
+			[
+				"line",
+				"Selection: Split into Lines"
+			],
+			[
+				"uis",
+				"UI: Select Color Scheme"
+			],
+			[
+				"COLOR",
+				"UI: Select Color Scheme"
+			],
+			[
+				"plus",
+				"Snippet: Object Value JS"
+			],
+			[
+				"visu",
+				"Bookmarks: Select Previous"
+			],
+			[
+				"REMOVE",
+				"Terminus Utilities: Remove User Theme"
+			],
+			[
+				"bra",
+				"BracketHighlighter: Swap Brackets"
+			],
+			[
+				"packe",
+				"Package Control: List Packages"
+			],
+			[
+				"lis",
+				"Preferences: Live Server Settings"
+			],
+			[
+				"filei",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 92.0,
+		"history":
+		[
+			"exit",
+			"clear",
+			"exit",
+			"clear",
+			"a + b",
+			"b = 2",
+			"a",
+			"a = 1 ",
+			"a",
+			"c",
+			"a",
+			"a = 1",
+			"const hola = 2",
+			"bash",
+			"htop",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/home/joan/Templates/API_REST"
+	],
+	"file_history":
+	[
+		"/home/joan/Templates/API_REST/public/reqWikipedia.js",
+		"/home/joan/Templates/frontAPI_REST/world/src/style.css",
+		"/home/joan/Templates/frontAPI_REST/world/index.html",
+		"/home/joan/Templates/frontAPI_REST/world/src/App.vue",
+		"/home/joan/Templates/API_REST/src/views/welcome.ejs",
+		"/home/joan/Templates/API_REST/.envExample",
+		"/home/joan/Templates/API_REST/public/showMap.js",
+		"/home/joan/Templates/API_REST/public/info.css",
+		"/home/joan/Templates/API_REST/README.md",
+		"/home/joan/Templates/API_REST/public/favicon.ico",
+		"/home/joan/Templates/API_REST/src/routes/ciudad.js",
+		"/home/joan/Templates/API_REST/public/selectSearch.js",
+		"/home/joan/Templates/API_REST/src/models/Ciudad.js",
+		"/home/joan/Templates/API_REST/public/request.js",
+		"/home/joan/Templates/API_REST/api.js",
+		"/home/joan/Templates/API_REST/src/routes/artWiki.js",
+		"/home/joan/Templates/pitterson/index.css",
+		"/home/joan/Templates/pitterson/pagina.html",
+		"/home/joan/Templates/plantillas/html_css/web_site/index.html",
+		"/home/joan/Templates/pitterson/index.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/ciudad.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Countries.js",
+		"/home/joan/Templates/API_REST/src/routes/estado.js",
+		"/home/joan/Templates/API_REST/src/models/Estado.js",
+		"/home/joan/Templates/API_REST/app.js",
+		"/home/joan/Templates/API_REST/package.json",
+		"/home/joan/Templates/API_REST/.env",
+		"/home/joan/Templates/API_REST/src/routes/index.js",
+		"/home/joan/Templates/API_REST/src/routes/pais.js",
+		"/home/joan/Templates/API_REST/src/models/Pais.js",
+		"/home/joan/Templates/API_REST/src/models/Modelo.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Modelo.js",
+		"/home/joan/Templates/API_REST/src/models/knexFile.js",
+		"/home/joan/Templates/API_REST/knexFile.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/knexfile.js",
+		"/home/joan/Templates/API_REST/src/routes/info.js",
+		"/home/joan/Templates/API_REST/src/views/404.ejs",
+		"/home/joan/Documents/world.sql",
+		"/home/joan/Templates/API_REST/src/public/info.css",
+		"/home/joan/Templates/API_REST/src/views/inedes.html",
+		"/home/joan/Templates/API_REST/src/views/info.ejs",
+		"/home/joan/Templates/API_REST/src/view/inedes.html",
+		"/home/joan/Templates/API_REST/src/view/welcome.ejs",
+		"/home/joan/Templates/API_REST/.gitignore",
+		"/home/joan/Templates/API_REST/seed/file.txt",
+		"/home/joan/Templates/API_REST/seed/cargar_db.js",
+		"/home/joan/Templates/API_REST/seed/nuevos_datos.txt",
+		"/home/joan/Documents/world.sql.gz",
+		"/home/joan/Templates/API_REST/seed/hola.txt",
+		"/home/joan/Local Sites/gymatenasg/logs/php/error.log",
+		"/home/joan/Documents/.data_worpress",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/src/route/helloRouter.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/src/route/index.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/src/server/server.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/controller/interfaces/index.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/controller/types/index.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/controller/helloController.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/src/utils/logger.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/.gitignore",
+		"/home/joan/Templates/openBootCap/code-verifier-backend/.gitignore",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/consultar.js",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/index.ts",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/coordinador.js",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/README.md",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/package.json",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/.env",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/tsconfig.json",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/.dotenv",
+		"/home/joan/Templates/openBootCap/misAvances/first_test/training_app/index.js",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/README.md",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/dist/index.js",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/index.ts",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/index.js",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/tsconfig.json",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/.env",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/package.json",
+		"/home/joan/Templates/openBootCap/misAvances/code-backend/.gitlab-ci.yml",
+		"/home/joan/Templates/testHenrry/fe-ct-prepcourse-fs/M03 JavaScript Fundamentos/Ejercicio 03.js",
+		"/home/joan/Templates/testHenrry/fe-ct-prepcourse-fs/M03 JavaScript Fundamentos/Ejercicio 01.js",
+		"/home/joan/Templates/PrepCource_Henrry/README.md",
+		"/home/joan/new.js",
+		"/home/joan/.mozilla/firefox/dlopjewx.default-release/content-prefs.sqlite",
+		"/home/joan/Desktop/convertidor_dolar_bs/node_modules/ajv/lib/compile/errors.ts",
+		"/home/joan/Templates/startbootstrap-resume-gh-pages/index.html",
+		"/home/joan/Desktop/convertidor_dolar_bs/index.html",
+		"/home/joan/Downloads/Telegram Desktop/all.json",
+		"/home/joan/script.sh",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/miembro.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/templates/pdf/pdf.ejs",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/categoria.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/dialogos.json",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/encuesta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/respuesta_usuario.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/public/css/joan.css",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/public/css/style.css",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/app.js",
+		"/home/joan/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/templates/reportes/template_consultar.html",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/templates/reportes/generar_consulta_pdf.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/lib/ordenar_res.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/migrations/009_notificacion.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/lib/checkDate.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/lib/filterQuery.js",
+		"/home/joan/Desktop/convertidor_dolar_bs/index.css",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/cantidad.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/migrations/005_encuesta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/migrations/007_respuesta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/migrations/006_pregunta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Respuesta_usuario.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/respuesta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/migrations/000_usuario.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/auth.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/admin.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/middleware/sesion.js",
+		"/home/joan/.config/sublime-text/Packages/User/Terminal.sublime-settings",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Categoria.js",
+		"/home/joan/Templates/plantillas/Js_con_dalto/Pelotas/app.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/templates/email/email.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Respuesta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Pregunta.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/inicio.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/models/Usuario.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/migrations/008_respuesta_usuario.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/estado.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/api.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/routes/usuario.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/seeds/000_reset.js",
+		"/home/joan/Desktop/proyecto_ufc/ufc_api/lib/checkDataGeo.js"
+	],
+	"find":
+	{
+		"height": 59.0
+	},
+	"find_in_files":
+	{
+		"height": 146.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/joan/Templates/API_REST"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/views/welcome.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/zzz A File Icon zzz/aliases/Plain Text (EJS).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1063,
+								1063
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.Terminus":
+	{
+		"height": 259.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 32.0
+	},
+	"output.exec":
+	{
+		"height": 213.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"consuta",
+				"routes/consultar.js"
+			],
+			[
+				"lib/",
+				"lib/ordenar_res.js"
+			],
+			[
+				"coordina",
+				"routes/coordinador.js"
+			],
+			[
+				"routes/respues",
+				"routes/respuesta_usuario.js"
+			],
+			[
+				"migra",
+				"migrations/009_notificacion.js"
+			],
+			[
+				"filter",
+				"lib/filterQuery.js"
+			],
+			[
+				"encue",
+				"routes/encuesta.js"
+			],
+			[
+				"coor",
+				"routes/coordinador.js"
+			],
+			[
+				"miembros",
+				"routes/miembro.js"
+			],
+			[
+				"route/respuesta",
+				"routes/respuesta_usuario.js"
+			],
+			[
+				"respues_u",
+				"models/Respuesta_usuario.js"
+			],
+			[
+				"respues",
+				"routes/respuesta.js"
+			],
+			[
+				"migracion",
+				"migrations/009_notificacion.js"
+			],
+			[
+				"miem",
+				"routes/miembro.js"
+			],
+			[
+				"catego",
+				"routes/categoria.js"
+			],
+			[
+				"mie",
+				"routes/miembro.js"
+			],
+			[
+				"route/ence",
+				"routes/encuesta.js"
+			],
+			[
+				"encuesta",
+				"routes/encuesta.js"
+			],
+			[
+				"consu",
+				"routes/consultar.js"
+			],
+			[
+				"miembro",
+				"routes/miembro.js"
+			],
+			[
+				"route/categ",
+				"routes/categoria.js"
+			],
+			[
+				"cit",
+				"models/Cities.js"
+			],
+			[
+				"modelo",
+				"node_modules/lodash/_baseLodash.js"
+			],
+			[
+				"modelo.js",
+				"models/Respuesta_usuario.js"
+			],
+			[
+				"mode",
+				"models/Modelo.js"
+			],
+			[
+				"che",
+				"lib/checkDataGeo.js"
+			],
+			[
+				"ciuda",
+				"routes/ciudad.js"
+			],
+			[
+				"coo",
+				"routes/coordinador.js"
+			],
+			[
+				"coord",
+				"routes/coordinador.js"
+			],
+			[
+				"",
+				".env"
+			],
+			[
+				"usuari",
+				"models/Usuario.js"
+			],
+			[
+				"se",
+				"app/server.js"
+			],
+			[
+				"/app",
+				"node_modules/express/lib/application.js"
+			],
+			[
+				"a",
+				"node_modules/resolve/async.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/proyecto_ufc/ufc_api/routes/usuario.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

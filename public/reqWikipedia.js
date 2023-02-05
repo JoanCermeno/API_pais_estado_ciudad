@@ -19,22 +19,40 @@ const callWikipedia = async (pais,estado,ciudad)=>{
 		return info;
 	}
 
-	const infoPais = await getinfo(pais);
-	const infoEstado = await getinfo(`${pais} estado ${estado}`);
-	const infoCiudad = await getinfo(`${pais} estado ${estado} ciudad ${ciudad}`);
+	let infoPais = await getinfo(pais);
+	let infoEstado = await getinfo(`${pais} estado ${estado}`);
+	let infoCiudad = await getinfo(`${pais} estado ${estado} ciudad ${ciudad}`);
 	//puintando el contenido del articulo 
 	console.log(infoPais,infoEstado,infoCiudad)
-	if(infoPais.snippet == undefined){
-		infoPais.snippet = notFound;
-	}else if(infoEstado == undefined){
-		infoEstado = notFound;
-	}else if(infoCiudad == undefined){
-		infoCiudad.snippet = notFound;
+
+	if(infoPais == undefined){
+		infoPais = { 
+			snippet: notFound,
+			link : "Information UnKnow"
+		}
+	}else{
+		infoPais.link = `<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoPais.pageid}" target="_blank"> Seguir leyendo en wikipedia </a>`
+	}
+	if(infoEstado == undefined){
+		infoEstado = { 
+			snippet: notFound ,
+			link : "Information UnKnow"
+		}
+	}else{
+		infoEstado.link = `<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoEstado.pageid}" target="_blank"> Seguir leyendo en wikipedia </a>`;
+	}
+	if(infoCiudad == undefined){
+		infoCiudad = { snippet: notFound,
+			link: "Information UnKnow"
+		}
+	}else{
+		infoCiudad.link = `<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoCiudad.pageid}" target="_blank"> Seguir leyendo en wikipedia </a>`
 	}
 
+
 	articuloDes.innerHTML = `
-	<h2>${pais}</h2><p>${infoPais.snippet} <a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoPais.pageid}" target="_blank"> Seguir leyendo en wikipedia </a></p>
-	<h2>${estado}</h2><p>${infoEstado.snippet}<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoEstado.pageid}" target="_blank"> Seguir leyendo en wikipedia</a></p>
-	<h2>${ciudad} </h2><p>${infoCiudad.snippet}<a class="text-secondary" href="https://es.wikipedia.org/?curid=${infoCiudad.pageid}" target="_blank"> Seguir leyendo en wikipedia </a></p>`;
+	<h2>${pais}</h2><p>${infoPais.snippet} ${infoPais.link}</p>
+	<h2>${estado}</h2><p>${infoEstado.snippet} ${infoEstado.link}</p>
+	<h2>${ciudad} </h2><p>${infoCiudad.snippet} ${infoCiudad.link}</p>`;
 
 }

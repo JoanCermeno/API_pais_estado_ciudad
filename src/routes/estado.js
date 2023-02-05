@@ -10,13 +10,14 @@ router.get('/', async (req,res) => {
 	}
 
 	const regions = await Query.where('country_id',pais_id);
-	let parseRegion = [];
 
-	regions.forEach((region)=>{
+	let parseRegion = regions.map((region) => {
 		if(region.name != ''){
-			parseRegion.push(region)
+			return region
 		}else{
-			console.log("clear the list of regions");
+			region.name = "the name is unknown"
+			return region
+			console.log("Name region  empty");
 		}
 	})
 	
