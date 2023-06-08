@@ -4,7 +4,6 @@ A small API that allows you to consult all the countries, states and cities of t
 * ejs
 * mysql2
 * knex
-* nodemon <- oops, this must have been a development dependency XD
 
 # Get Started
 Once the repository has been cloned, you must do an 
@@ -27,5 +26,5 @@ This will start the server and you will be able to make requests to the followin
 
 # help
 
-For more information about <b>use, and more</b> see you http://localhost:6969/
+For more information about <b>use and more</b> see you http://localhost:6969/doc
 <b> Note:If you do not provide a custom host in the .env file, the api will run at http://localhost:8000/ by default</b>

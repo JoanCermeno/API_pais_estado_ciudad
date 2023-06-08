@@ -1,12 +1,34 @@
 const express = require('express');
 const router = express.Router();
 const Pais = require('../models/Pais')
+const isString = require('../../lib/isString');
 
 router.get('/', async (req,res)=>{
+	//recibiendo parámetros de búsqueda
+	const { nombre , id } = req.query;
 	const Query = Pais.query();
-	const allPaises = await Query;
-	res.send(allPaises);
 	
+	if (id) {
+    	const parsedId = parseInt(id, 10); // Parsear el ID a un número entero
+	    if (isNaN(parsedId) || parsedId <= 0 || parsedId > 1000) {
+	    	return res.status(400).send({ error: 'El parámetro "id" debe ser un número positivo y no muy grande.' });
+	    }
+    	Query.where('id', parsedId);
+  	}else{
+  		if(nombre == 'undefined') {
+ 			return res.status(400).send({ error: 'El parámetro "nombre" no puede tener undefined' });
+		}
+		if(typeof nombre != 'undefined' && isString(nombre)){
+			Query.where('name', 'LIKE', `%${nombre}%`);
+		}
+  	}
+
+	try{
+		const allPaises = await Query;
+		return res.send(allPaises);
+	}catch(e){	
+		return res.status(500).send({ error: e.message });
+	}
 })
 
 
