@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 dotenv.config();
 const PORT = process.env.PORT || 8080;
+const DB_DEV_HOST = process.env.DB_DEV_HOST || 'localhost';
 //creando una instancia de express
 const app = express();
 //Configurando el router
@@ -16,4 +17,4 @@ app.use(function(req, res, next) {
   res.render('404');
 });
 
-app.listen(PORT, () => console.log("Escuchando... En http://localhost:" + PORT) );
+app.listen(PORT, () => console.log("Escuchando... En https://"+DB_DEV_HOST+":" + PORT) );
