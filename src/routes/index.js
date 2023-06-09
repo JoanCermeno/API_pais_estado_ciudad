@@ -5,9 +5,9 @@ require('dotenv').config();
 router.get('/',(req,res) => {
 	//mandamos variables tales como pueto, name host para que desde el cliente
 	//pueda hacer peticiones con javascript
+	 const host = req.protocol + '://' + req.get('host');
 	res.render('welcome',{
-		host: process.env.DB_DEV_HOST,
-      	port: process.env.PORT,
+		host
 	});
 	console.log("GET / index");
 })

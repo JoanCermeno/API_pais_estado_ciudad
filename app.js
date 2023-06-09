@@ -10,11 +10,11 @@ const app = express();
 //Configurando el router
 app.use('/', require('./api'));
 app.set('views', path.join(__dirname, 'src/views'));
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 app.use(function(req, res, next) {
   res.render('404');
 });
 
-app.listen(PORT, () => console.log("Escuchando... En https://"+DB_DEV_HOST+":" + PORT) );
+app.listen(PORT, () => console.log("API UP!"));
