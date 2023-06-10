@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: lato, sans-serif;
 
 }
 .main_title{
@@ -75,3 +75,12 @@
 
   }
 }
+
+.nav-links{
+
+  background-color: var(--light);
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
