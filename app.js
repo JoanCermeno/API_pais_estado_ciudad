@@ -11,6 +11,7 @@ const DB_DEV_HOST = process.env.DB_DEV_HOST || 'localhost';
 const app = express();
 //Configurando el router
 app.use(cors());
+app.enable('trust proxy'); 
 app.use('/', require('./api'));
 app.set('views', path.join(__dirname, 'src/views'));
 app.use(express.static(path.join(__dirname, 'public')));

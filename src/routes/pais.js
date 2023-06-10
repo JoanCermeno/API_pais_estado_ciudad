@@ -4,6 +4,9 @@ const Pais = require('../models/Pais')
 const isString = require('../../lib/isString');
 
 router.get('/', async (req,res)=>{
+	if(req.secure){
+		req.protocol = 'https';
+	}
 	//recibiendo parámetros de búsqueda
 	const { nombre , id } = req.query;
 	const Query = Pais.query();

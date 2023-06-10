@@ -3,6 +3,7 @@ const router = express.Router();
 const Ciudad = require('../models/Ciudad');
 
 router.get('/', async (req, res) => {
+	
 	const Query = Ciudad.query();
 	const {	estado_id, pais_id , ciudad_id } = req.query;
 	if(ciudad_id){
