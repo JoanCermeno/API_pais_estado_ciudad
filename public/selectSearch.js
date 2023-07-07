@@ -13,6 +13,7 @@ class BarLoad {
 		this.idBarLoad.classList.add('hiden');
 	}
 }
+
 const barLoadEstado = new BarLoad('#bar-load-estado');
 const barLoadCiudad = new BarLoad('#bar-load-ciudad');
 
@@ -29,6 +30,19 @@ select_estado.addEventListener('change', (e) => {
 
 })
 
+//function for insert the imput select
+// const loadSelect = (elementHTML)=>{
+// 	/* elementHTML is string */
+// 	const config = {
+// 	    search: true, // Toggle search feature. Default: false
+// 	    creatable: false, // Creatable selection. Default: false
+// 	    clearable: false, // Clearable selection. Default: false
+// 	    maxHeight: '360px', // Max height for showing scrollbar. Default: 360px
+// 	    size: '', // Can be "sm" or "lg". Default ''
+// 	}
+// 	dselect(document.querySelector(elementHTML), config)
+// }
+
 const getCitiesOf = async (idEstado, idPais) => {
 	/**
 	* This function receives the id of the selected state or region And also idPais. To send to load the list of cities associated with that state or region
@@ -36,18 +50,18 @@ const getCitiesOf = async (idEstado, idPais) => {
 	fetch(`${URLactual}ciudad?estado_id=${idEstado}&pais_id=${idPais}`)
 		.then((response) => response.json())
 		.then((ciudades) => {
-			let templateHTML = '';
+			let templateHTML = "";
 			ciudades.forEach((ciudad) => {
 				templateHTML += `<option value="${ciudad.id}">${ciudad.name}</option>`;
 			})
+			console.log(ciudades); 
 			select_ciudad.innerHTML = '<option selected value="default">--Selecione una Ciudad--</option>';
-
 			select_ciudad.innerHTML += templateHTML;
 			barLoadCiudad.hiden();
 
 			//console.log("ya cargue las ciudades")
 		})
-		.catch((e) => console.log("hubo un error al pedir las ciudades " + error))
+		.catch((e) => console.log("hubo un error al pedir las ciudades " + e))
 	console.log("mande a cargar las ciudades")
 }
 
@@ -71,10 +85,15 @@ const getEstadoOf = async (idPais) => {
 			//Listo eSTADOS CARGADOS CON EXITO
 			barLoadEstado.hiden();
 			
-		})
-		.catch((e) => console.log("Error al pedir estados" + e))
-}
 
+
+		})
+		.catch((e) =>{
+			barLoadEstado.hiden("error");
+			console.log("Error al pedir estados" + e)
+
+		})
+}
 
 
 fetch(`${URLactual}pais`)
@@ -85,8 +104,9 @@ fetch(`${URLactual}pais`)
 		result.forEach((pais) => {
 			templateHTML += `<option value="${pais.id}">${pais.name}</option>`;
 		})
-		select_pais.innerHTML = '<option selected value="default">--Selecione un Pais--</option>';
+
 		select_pais.innerHTML += templateHTML;
+		console.log(select_pais);
 
 	})
 	.catch(error => console.log('error:', error));

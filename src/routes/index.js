@@ -10,6 +10,7 @@ router.get('/',(req,res) => {
 	}
 
 	const host = req.protocol + '://' + req.get('host');
+	//mandamos un objeto que nos permite mostrar la barra de busqueda.
 
 	res.render('welcome',{
 		host
