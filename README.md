@@ -25,3 +25,6 @@ Below is a sample of the data available in each table of the database. This will
 ![Table fields of the database](public/data.png)
 
 Explore and make the most of this demographic data in your projects!
+
+# Download the SQL
+https://drive.google.com/drive/folders/1nPJYKxTevytGVOks8abc2NqqwHzQ6PiQ?usp=drive_link
