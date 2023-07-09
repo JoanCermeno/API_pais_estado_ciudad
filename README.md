@@ -1,30 +1,27 @@
-# API_pais_estado_ciudad
-A small API that allows you to consult all the countries, states and cities of the world. Both in English and Spanish. Perfect for incorporating into projects, this api is supported by a public and free database... dependencies of the proyect 
-* express
-* ejs
-* mysql2
-* knex
+# WorldGeoDB
 
-# Get Started
-Once the repository has been cloned, you must do an 
-`npm install`
-Now you must download the database. from the following link. as the sql file is a bit heavy. I hosted it in google driver
-<a href="https://drive.google.com/file/d/1m4TIBFPlIZPmynR9JjDTtHootvQwVGH6/view?usp=share_link"> the magic File sql xD </a>
+## Demographic Data Demo: Usage Guide and Table Description
+Welcome to the Demographic Data Demo! This project provides a collection of demographic data that can be highly useful in a variety of applications and projects. This guide will help you understand how to effectively utilize this data.
 
-before of start the application. Import in your client mysql a new databases called "world". or 
-if you are using Lampp or Xampp Go to <a>/opt/lampp/bin/mariadb</a> this for linux. on windows  you executed xampp and in the CLI type this...
+## Table Description
+Below are the available tables in the database along with their respective fields:
 
-`source > world.sql`
-note: you must specify the path of the sql file.
-await. this sql insert all tables and data nesesary...
+- Countries Table: This table stores information about countries worldwide, including their name and unique code.
 
-to download the project dependencies, then execute the 
-`npm run dev` command. 
-This will start the server and you will be able to make requests to the following routes...
+- States Table: Here, you will find states or provinces of various countries, along with their names and corresponding codes.
 
-....
+- Cities Table: This table contains data about cities, including their names, longitude, latitude and references to the states they belong to.
 
-# help
+## Data Usage
+The demographic data provided in this project is a valuable tool for a wide range of applications and projects. Some examples of its usage include:
 
-For more information about <b>use and more</b> see you http://localhost:6969/doc
-<b> Note:If you do not provide a custom host in the .env file, the api will run at http://localhost:8000/ by default</b>
+- Development of location-based applications and services, as well as geographical analysis.
+- Market analysis and customer segmentation.
+- Urban planning and decision-making related to sustainable development.
+
+## Data Sample
+Below is a sample of the data available in each table of the database. This will give you a clear idea of the structure and values present in the datasets.
+
+![Table fields of the database](https://drive.google.com/file/d/1C81riprWkDqbTbtxAdb225Vg_4nyevbT/view?usp=drive_link)
+
+Explore and make the most of this demographic data in your projects!

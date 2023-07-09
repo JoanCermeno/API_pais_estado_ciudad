@@ -2,7 +2,7 @@ const URLactual = window.location;
 const select_pais = document.querySelector('#select_pais');
 const select_estado = document.querySelector('#select_estado');
 const select_ciudad = document.querySelector('#select_ciudad');
-const search_global = document.querySelector('#global_search');
+
 class BarLoad {
 	constructor(idBarLoad){
 		this.idBarLoad = document.querySelector(idBarLoad);

@@ -37,15 +37,14 @@
 		</div>
 
 
-		<div class="mx-auto p-2">
+		<div class="form-floating mx-auto p-2">
 
-			<label for="pais_input">Escoje un pais:</label>
-			<input id="pais_input" class="p-2 col-12" type="text" list="select_pais">
-			<datalist id="select_pais">
+			<select class="form-select form-select-sm" id="select_pais" aria-label="Default select example">
+				<option selected value="default">--Selecciona un pais--</option>
 				<% paises.forEach(function(pais) { %>
-				   <option value="<%= pais.name %>"> <%= pais.id %> </option>
-				 <% }); %>
-			</datalist>
+				  <option value="<%= pais.id %>"> <%= pais.name %>  </option>
+				<% }); %>
+			</select>
 			
 		</div>
 
