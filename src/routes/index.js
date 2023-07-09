@@ -1,13 +1,21 @@
 const express = require('express');
 const router = express.Router();
+const Pais = require('../models/Pais')
 require('dotenv').config();
 
-router.get('/',(req,res) => {
+router.get('/', async (req,res) => {
 	//mandamos variables tales como pueto, name host para que desde el cliente
 	//pueda hacer peticiones con javascript
-	res.render('welcome',{
-		host: process.env.DB_DEV_HOST,
-      	port: process.env.PORT,
+	if(req.secure){
+		req.protocol = 'https';
+	}
+
+	const host = req.protocol + '://' + req.get('host');
+	//mandamos un objeto que nos permite mostrar la barra de busqueda.
+	const paises = await Pais.query();
+ 	res.render('welcome',{
+		host,
+		paises
 	});
 	console.log("GET / index");
 })

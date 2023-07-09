@@ -2,6 +2,7 @@ const URLactual = window.location;
 const select_pais = document.querySelector('#select_pais');
 const select_estado = document.querySelector('#select_estado');
 const select_ciudad = document.querySelector('#select_ciudad');
+const search_global = document.querySelector('#global_search');
 class BarLoad {
 	constructor(idBarLoad){
 		this.idBarLoad = document.querySelector(idBarLoad);
@@ -13,6 +14,8 @@ class BarLoad {
 		this.idBarLoad.classList.add('hiden');
 	}
 }
+
+
 const barLoadEstado = new BarLoad('#bar-load-estado');
 const barLoadCiudad = new BarLoad('#bar-load-ciudad');
 
@@ -26,7 +29,6 @@ select_estado.addEventListener('change', (e) => {
 	console.log("buscando cuidades del estado " + select_estado.value)
 	getCitiesOf(select_estado.value, select_pais.value);
 	barLoadCiudad.show();
-
 })
 
 const getCitiesOf = async (idEstado, idPais) => {
@@ -36,18 +38,18 @@ const getCitiesOf = async (idEstado, idPais) => {
 	fetch(`${URLactual}ciudad?estado_id=${idEstado}&pais_id=${idPais}`)
 		.then((response) => response.json())
 		.then((ciudades) => {
-			let templateHTML = '';
+			let templateHTML = "";
 			ciudades.forEach((ciudad) => {
 				templateHTML += `<option value="${ciudad.id}">${ciudad.name}</option>`;
 			})
+			console.log(ciudades); 
 			select_ciudad.innerHTML = '<option selected value="default">--Selecione una Ciudad--</option>';
-
 			select_ciudad.innerHTML += templateHTML;
 			barLoadCiudad.hiden();
 
 			//console.log("ya cargue las ciudades")
 		})
-		.catch((e) => console.log("hubo un error al pedir las ciudades " + error))
+		.catch((e) => console.log("hubo un error al pedir las ciudades " + e))
 	console.log("mande a cargar las ciudades")
 }
 
@@ -71,22 +73,12 @@ const getEstadoOf = async (idPais) => {
 			//Listo eSTADOS CARGADOS CON EXITO
 			barLoadEstado.hiden();
 			
+
+
 		})
-		.catch((e) => console.log("Error al pedir estados" + e))
+		.catch((e) =>{
+			barLoadEstado.hiden("error");
+			console.log("Error al pedir estados" + e)
+
+		})
 }
-
-
-
-fetch(`${URLactual}pais`)
-	.then(response => response.json() )
-	.then(result => {
-		let templateHTML = '';
-		//pintando resultados
-		result.forEach((pais) => {
-			templateHTML += `<option value="${pais.id}">${pais.name}</option>`;
-		})
-		select_pais.innerHTML = '<option selected value="default">--Selecione un Pais--</option>';
-		select_pais.innerHTML += templateHTML;
-
-	})
-	.catch(error => console.log('error:', error));

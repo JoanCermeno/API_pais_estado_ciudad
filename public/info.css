@@ -76,11 +76,7 @@
   }
 }
 
-.nav-links{
-
-  background-color: var(--light);
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-between;
+.title_doc{
+  text-align: center;
 }
 
