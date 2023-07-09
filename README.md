@@ -22,6 +22,6 @@ The demographic data provided in this project is a valuable tool for a wide rang
 ## Data Sample
 Below is a sample of the data available in each table of the database. This will give you a clear idea of the structure and values present in the datasets.
 
-![Table fields of the database](https://drive.google.com/file/d/1C81riprWkDqbTbtxAdb225Vg_4nyevbT/view?usp=drive_link)
+![Table fields of the database](https://drive.google.com/file/d/1C81riprWkDqbTbtxAdb225Vg_4nyevbT/view?usp=sharing)
 
 Explore and make the most of this demographic data in your projects!
