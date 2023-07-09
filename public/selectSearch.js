@@ -2,6 +2,7 @@ const URLactual = window.location;
 const select_pais = document.querySelector('#select_pais');
 const select_estado = document.querySelector('#select_estado');
 const select_ciudad = document.querySelector('#select_ciudad');
+const search_global = document.querySelector('#global_search');
 class BarLoad {
 	constructor(idBarLoad){
 		this.idBarLoad = document.querySelector(idBarLoad);
@@ -13,6 +14,7 @@ class BarLoad {
 		this.idBarLoad.classList.add('hiden');
 	}
 }
+
 
 const barLoadEstado = new BarLoad('#bar-load-estado');
 const barLoadCiudad = new BarLoad('#bar-load-ciudad');
@@ -27,21 +29,7 @@ select_estado.addEventListener('change', (e) => {
 	console.log("buscando cuidades del estado " + select_estado.value)
 	getCitiesOf(select_estado.value, select_pais.value);
 	barLoadCiudad.show();
-
 })
-
-//function for insert the imput select
-// const loadSelect = (elementHTML)=>{
-// 	/* elementHTML is string */
-// 	const config = {
-// 	    search: true, // Toggle search feature. Default: false
-// 	    creatable: false, // Creatable selection. Default: false
-// 	    clearable: false, // Clearable selection. Default: false
-// 	    maxHeight: '360px', // Max height for showing scrollbar. Default: 360px
-// 	    size: '', // Can be "sm" or "lg". Default ''
-// 	}
-// 	dselect(document.querySelector(elementHTML), config)
-// }
 
 const getCitiesOf = async (idEstado, idPais) => {
 	/**
@@ -94,19 +82,3 @@ const getEstadoOf = async (idPais) => {
 
 		})
 }
-
-
-fetch(`${URLactual}pais`)
-	.then(response => response.json() )
-	.then(result => {
-		let templateHTML = '';
-		//pintando resultados
-		result.forEach((pais) => {
-			templateHTML += `<option value="${pais.id}">${pais.name}</option>`;
-		})
-
-		select_pais.innerHTML += templateHTML;
-		console.log(select_pais);
-
-	})
-	.catch(error => console.log('error:', error));
