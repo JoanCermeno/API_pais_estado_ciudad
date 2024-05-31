@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rutas de la API</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>Obtener Lista de Países</h1>
+    <p>Este endpoint permite obtener una lista de países.</p>
+    <h2>Ejemplo de Uso</h2>
+    <pre><code>GET /api/paises</code></pre>
+    <h2>Parámetros</h2>
+    <ul>
+      <li><strong>Query Parameters:</strong></li>
+      <!-- Detalles de los parámetros -->
+      <li>
+        <strong>nombre</strong> (opcional): Filtra los resultados para incluir
+        solo aquellos países cuyo nombre coincide con el valor proporcionado.
+        Ejemplo: <br />
+        <code>nombre=Venezuela</code>.
+      </li>
+    </ul>
+    <h2>Respuesta</h2>
+    <p>
+      La respuesta es un array de objetos, donde cada objeto representa un país.
+      Cada objeto contiene los siguientes campos:
+    </p>
+    <ul>
+      <li><strong>id</strong>: Un número único que identifica al país.</li>
+      <li><strong>name</strong>: El nombre oficial del país.</li>
+      <li>
+        <strong>code</strong>: Un código de dos letras que representa al país.
+      </li>
+    </ul>
+    <pre><code>[
+        {
+            "id": 217,
+            "name": "Venezuela",
+            "code": "ve"
+        },
+        <!-- Otros países pueden seguir aquí -->
+    ]</code></pre>
+  </body>
 </html>

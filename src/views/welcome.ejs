@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/@jarstone/dselect/dist/css/dselect.css"
@@ -23,29 +22,38 @@
       href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
       rel="stylesheet"
     />
+    <style></style>
 
     <title>The World Data</title>
   </head>
   <body class="bg-gradiente-vice-city">
     <h2 class="main_title mt-5 text-light">The World API.</h2>
+
     <p class="text-center text text-light my-4 fs-6">
       Hola y bienvenido, está api te proporciona una lista de todos,los países
       del mundo con sus respectivos estados o regiones además de sus ciudades o
       pueblos. Esto es solo una demo de lo que se puede hacer con estos datos.
-      API publica creada por Joan Cermeño
+      API publica creada por
+      <a href="https://github.com/JoanCermeno" blank_ class="text-light"
+        ><b> Joan Cermeño</b></a
+      >
     </p>
+
     <div class="container d-flex justify-content-center">
       <span class="text-center text-light fs-1">{🌎}</span>
     </div>
 
     <div class="container w-75 py-2 border rounded bg-light">
-      <div class="container d-flex justify-content-center">
-        <h2 class="fs-2">Ejemplo</h2>
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <h2 class="fs-2">Demo</h2>
+        <div class="alert alert-primary" role="alert">
+          <a href="/doc" class="alert-link">Ver la documentacion aca</a>.
+        </div>
       </div>
 
       <div class="form-floating mx-auto p-2">
-        <button>Consulta las documentacion Aqui</button>
-
         <select
           class="form-select form-select-sm"
           id="select_pais"
@@ -127,7 +135,7 @@
         </section>
       </section>
     </div>
-
+    <footer></footer>
     <script type="text/javascript" src="/selectSearch.js"></script>
     <script type="text/javascript" src="/showMap.js"></script>
     <script type="text/javascript" src="/reqWikipedia.js"></script>
