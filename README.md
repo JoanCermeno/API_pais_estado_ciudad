@@ -1,6 +1,3 @@
-Claro, aquí tienes el texto traducido al español en formato Markdown:
-
-```markdown
 # WorldGeoDB
 
 ## Guía de Uso y Descripción de la Tabla de Datos Demográficos
@@ -31,8 +28,6 @@ Explora y aprovecha al máximo estos datos demográficos en tus proyectos!
 
 # Descarga el SQL
 https://drive.google.com/drive/folders/1nPJYKxTevytGVOks8abc2NqqwHzQ6PiQ?usp=drive_link
-```
 
-Este bloque de código Markdown incluye el texto traducido al español, listas, enlaces y una imagen. Puedes copiar y pegar este código en un archivo Markdown (.md) para visualizarlo correctamente.
 
-Citations:
+
