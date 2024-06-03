@@ -3,18 +3,18 @@ const router = express.Router();
 const Pais = require("../models/Pais");
 const isString = require("../../lib/isString");
 
-router.get("/:idPais", async (req, res) => {
+router.get("/:pais_id", async (req, res) => {
   if (req.secure) {
     req.protocol = "https";
   }
 
-  const { idPais } = req.params;
+  const { pais_id } = req.params;
 
   //consulta a la base de datos
   const Query = Pais.query();
 
-  if (idPais) {
-    const parsedId = parseInt(idPais, 10); // Parsear el ID a un número entero
+  if (pais_id) {
+    const parsedId = parseInt(pais_id, 10); // Parsear el ID a un número entero
     if (isNaN(parsedId) || parsedId <= 0 || parsedId > 1000) {
       //validando id
       return res.status(400).send({
@@ -36,7 +36,7 @@ router.get("/:idPais", async (req, res) => {
 router.get("/", async (req, res) => {
   //recibiendo parámetros de búsqueda
   const { nombre } = req.query;
-  console.log("Entre en juego");
+
   //consulta a la base de datos
   try {
     if (nombre == "undefined") {

@@ -2,9 +2,10 @@ const express = require("express");
 const router = express.Router();
 const Ciudad = require("../models/Ciudad");
 
-router.get("/", async (req, res) => {
+router.get("/:pais_id", async (req, res) => {
   const Query = Ciudad.query();
-  const { estado_id, pais_id, ciudad_id, nombreCiudad } = req.query;
+  const { estado_id, ciudad_id, nombre } = req.query;
+  const { pais_id } = req.params;
 
   if (ciudad_id) {
     const ciudad = await Query.findById(ciudad_id);
@@ -27,14 +28,14 @@ router.get("/", async (req, res) => {
     });
   }
 
-  if (nombreCiudad) {
+  if (nombre) {
     const ciudadByName = await Query.where("country_id", pais_id).where(
       "name",
       "LIKE",
-      `%${nombreCiudad}%`
+      `%${nombre}%`
     );
     console.log(ciudadByName);
-    return res.send(cidadEncontrada);
+    return res.send(ciudadByName);
   }
 
   //si estado id es verdadero buscamos las ciudades de ese estado
@@ -45,6 +46,30 @@ router.get("/", async (req, res) => {
     );
     console.log(cities);
     return res.send(cities);
+  }
+
+  //Si solo nos dan el pais_id solo ese parametro mostramos las ciudades compelta de ese pais
+  try {
+    const allCitiesOfCountry = await Query.where("country_id", "=", pais_id);
+    res.send(allCitiesOfCountry);
+  } catch (error) {
+    res.send({
+      error: true,
+      mensaje:
+        "OCurrio un error al procesar los datos por favor intente mas tarde, si el problema persiste puede reportar este error",
+    });
+  }
+});
+
+router.get("/", async (req, res) => {
+  const Query = Ciudad.query();
+  const { ciudad_id } = req.query;
+
+  if (ciudad_id) {
+    const ciudad = await Query.findById(ciudad_id);
+    console.log("se solicito una sola ciudad");
+    console.log(ciudad);
+    return res.send(ciudad);
   }
 });
 

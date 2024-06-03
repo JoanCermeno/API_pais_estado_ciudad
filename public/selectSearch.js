@@ -34,7 +34,7 @@ const getCitiesOf = async (idEstado, idPais) => {
   /**
    * This function receives the id of the selected state or region And also idPais. To send to load the list of cities associated with that state or region
    * */
-  fetch(`${URLactual}ciudad?estado_id=${idEstado}&pais_id=${idPais}`)
+  fetch(`${URLactual}ciudad/${idPais}?estado_id=${idEstado}`)
     .then((response) => response.json())
     .then((ciudades) => {
       let templateHTML = "";
@@ -60,7 +60,7 @@ const getEstadoOf = async (idPais) => {
 
   console.log("funcion get Estado activada...");
 
-  fetch(`${URLactual}estados/${idPais}`)
+  fetch(`${URLactual}estado/${idPais}`)
     .then((response) => response.json())
     .then((estados) => {
       console.log(estados);

@@ -30,5 +30,5 @@ app.use(function (req, res, next) {
 });
 
 app.listen(PORT, () =>
-  console.log(`API Running in the ${PORT} and DB_DEV_HOST is ${DB_DEV_HOST} `)
+  console.log(`app Runing in http://${DB_DEV_HOST}:${PORT}`)
 );
