@@ -23,6 +23,7 @@ app.set("views", path.join(__dirname, "src/views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
+//muetra el error de pagina no encontrada
 app.use(function (req, res, next) {
   // const host = req.protocol + '://' + req.get('host');
 

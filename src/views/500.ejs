@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error 500</title>
+    <!-- CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="w-100 position-sticky d-flex justify-content-center mb-5"
+      style="top: 20px"
+    >
+      <%- include('header'); %>
+    </header>
+
+    <div class="container">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 100vh"
+      >
+        <img
+          src="error-500.jpg"
+          alt="img Error 500"
+          style="max-width: 100%; max-height: 100%"
+        />
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="alert alert-danger" role="alert">
+        ¡Oh no Parece que hubo un error 500 en el servidor. Lo sentimos por el
+        inconveniente.
+      </div>
+    </div>
+
+    <!-- JS de Bootstrap y jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
