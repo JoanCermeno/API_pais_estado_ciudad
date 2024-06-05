@@ -32,7 +32,7 @@ btn.addEventListener("click", (e) => {
   //mostrando el contenedor del mapa
   sectionMap.classList.remove("d-none");
   //make a request to server...
-  fetch(`${URLactual}ciudad/?ciudad_id=${ciudad_id}`)
+  fetch(`${URLactual}api/ciudad/?ciudad_id=${ciudad_id}`)
     .then((response) => response.json())
     .then((ciudad) => {
       const theMap = new UIelement("#map");
@@ -73,7 +73,7 @@ btn.addEventListener("click", (e) => {
     })
     .catch((e) => {
       btn.disabled = false;
-      alert("Uy Intenta de nuevo, algo salio mal");
+      alert("Uy Intenta de nuevo, algo salio mal al mostrar el mapa");
       console.log("Error" + e);
     });
 });

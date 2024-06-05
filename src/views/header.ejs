@@ -1,28 +1,61 @@
-<nav
-  class="navbar w-75 rounded bg-light bg-opacity-75"
-  style="backdrop-filter: blur(10px)"
+<style>
+  #nav-bar-app {
+    background: rgba(22, 21, 21, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .nav-item:hover {
+    background-color: rgba(22, 21, 21, 0.35);
+    cursor: pointer;
+    text-shadow: azure 10px;
+    border-radius: 10px;
+  }
+</style>
+<header
+  class="w-100 position-sticky d-flex justify-content-center"
+  style="top: 20px; z-index: 10"
 >
-  <!-- Navbar content -->
-  <div class="container-fluid d-flex justify-content-betwend">
-    <a class="navbar-brand" href="/">API World {🌎}</a>
+  <nav
+    id="nav-bar-app"
+    class="navbar w-75 rounded bg-opacity-75 z-3"
+    style="backdrop-filter: blur(10px)"
+  >
+    <!-- Navbar content -->
+    <div class="container-fluid d-flex justify-content-betwend">
+      <a class="navbar-brand link-light" href="/">API World {🌎}</a>
 
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link link-dark" aria-current="page" href="/doc"
-          >Documentacion</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link link-dark"
-          href="https://github.com/JoanCermeno/API_pais_estado_ciudad"
-          >Acerca de</a
-        >
-      </li>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link link-light"
+            aria-current="page"
+            href="/doc"
+            Target="_blank"
+            >Documentacion</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-light"
+            href="https://github.com/JoanCermeno/API_pais_estado_ciudad"
+            Target="_blank"
+            >Acerca de</a
+          >
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link link-dark" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <li class="nav-item">
+          <a
+            class="nav-link link-light"
+            href="https://github.com/JoanCermeno/API_pais_estado_ciudad/issues"
+            Target="_blank"
+            >Reportar un error</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

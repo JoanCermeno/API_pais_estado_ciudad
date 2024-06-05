@@ -15,7 +15,6 @@
       href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="info.css" />
     <!-- Incluir Prism -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
     <!-- Incluir el tema por defecto de Prism -->
@@ -23,22 +22,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css"
       rel="stylesheet"
     />
-
+    <style>
+      .icon-cafe {
+        width: 100px;
+        height: 100px;
+        background-image: url("taza-de-cafe.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
     <title>Rutas de la API</title>
   </head>
   <body class="bg-gradiente-vice-city">
-    <header
-      class="w-100 position-sticky d-flex justify-content-center"
-      style="top: 20px"
-    >
-      <%- include('header'); %>
-    </header>
+    <%- include('header'); %>
 
     <section class="container bg-light rounded p-5 mt-5">
-      <h2 class="text-center">Guía Rápida</h2>
+      <h2 class="text-left">Guía Rápida</h2>
 
       <div class="row bg-white rounded p-5 border-2 shadow-sm mb-5">
-        <div class="col-4">
+        <div class="col-4 bg-light rounded h-100 py-5 shadow">
+          <pre class="text-center">Enpoints disponibles </pre>
           <div class="list-group" id="list-tab" role="tablist">
             <a
               class="list-group-item list-group-item-action active"
@@ -47,7 +51,7 @@
               href="#list-pais"
               role="tab"
               aria-controls="pais"
-              >api/pais:pais_id</a
+              >api/pais</a
             >
             <a
               class="list-group-item list-group-item-action"
@@ -77,12 +81,71 @@
               role="tabpanel"
               aria-labelledby="list-pais-list"
             >
-              <h3>Parametros</h3>
+              <h1>Países</h1>
+              <p>
+                Este endpoint permite obtener una lista de países del mundo.
+              </p>
+              <pre><code><span class="badge text-bg-primary">GET</span> /api/pais</code></pre>
               <ul>
                 <li>
-                  id_pais(opcional) , type number: Este id se puede pasar por
-                  url de la sigueinte manera <code>api/pais/:id_pais</code>
-                  retorna un pais específico
+                  <b>id_pais(opcional):</b> Este id representa el pais se pasa
+                  por url params <br />
+                  <code>api/pais/:id_pais</code> <br />
+                  <b>Ejemplo:</b>
+
+                  <code>api/pais/217</code>
+                  <pre><code class="language-json">
+                    {
+                      "id": 217,
+                      "name": "Venezuela",
+                      "code": "ve"
+                    }
+                  </code></pre>
+                </li>
+                <h3>Respuesta</h3>
+                <p>
+                  La respuesta es un array de objetos, donde cada objeto
+                  representa un país. Cada objeto contiene los siguientes
+                  campos:
+                </p>
+                <ul>
+                  <li>
+                    <strong>id</strong>: Un número único que identifica al país.
+                  </li>
+                  <li><strong>name</strong>: El nombre oficial del país.</li>
+                  <li>
+                    <strong>code</strong>: Un código de dos letras que
+                    representa al país.
+                  </li>
+                </ul>
+                <li>
+                  <b>nombre(opcional):</b> Filtra un pais por su nombre, por
+                  ejemplo <br />
+                  <code>api/pais?nombre=Vene</code>
+                  <br />
+
+                  <pre><code class="language-json">[
+                    {
+                      "id": 47,
+                      "name": "Cape Verde",
+                      "code": "cv"
+                    },
+                    {
+                      "id": 142,
+                      "name": "Maldives",
+                      "code": "mv"
+                    },
+                    {
+                      "id": 185,
+                      "name": "Slovenia",
+                      "code": "si"
+                    },
+                    {
+                      "id": 217,
+                      "name": "Venezuela",
+                      "code": "ve"
+                    }
+                  ]</code></pre>
                 </li>
               </ul>
             </div>
@@ -95,213 +158,139 @@
               <h3>Parametros</h3>
               <ul>
                 <li>
-                  id_pais(Requerido):Sirve para mostrar los estados de un pais
+                  <b>id_pais(Requerido):</b> Sirve para mostrar los estados de
+                  un pais <br />
                   <code>api/estado/:id_pais</code>
-                  retorna una lista de estados de dicho pais
+                  retorna una lista de estados del pais espesificado
                 </li>
                 <li>
-                  nombre(Opcional) :sirve para filtrar un estado por su nombre
-                  <code>api/estado/:id_pais?nombre=nombreDeMiEstado</code>
+                  <b>nombre (opcional)</b> :sirve para filtrar un estado por su
+                  nombre
+                  <code>api/estado/217?nombre=Portuguesa</code>
                 </li>
                 <li>
-                  id(Opcional) : devuelve un estado espesifico
-                  <code>api/estado/:id_pais/id</code>
+                  <b>id_estado (Opcional)</b> : devuelve un estado espesifico
+                  <code>api/estado/:id_pais/?id_estado=3712</code>
                 </li>
+                <br />
+                <pre><code class="language-json">[
+                  {
+                    "id": 3717,
+                    "name": "Portuguesa",
+                    "code": "18",
+                    "country_id": 217
+                  }
+                ]</code></pre>
               </ul>
             </div>
             <div
               class="tab-pane fade"
-              id="list-messages"
+              id="list-ciudad"
               role="tabpanel"
               aria-labelledby="list-ciudad-list"
             >
-              ...
+              <h3>Parametros</h3>
+              <ul>
+                <li>
+                  <b>pais_id (requerido)</b> Apunta al pais al cual pertenece la
+                  ciudad
+                  <br />
+                  <code>api/ciudad/<b>217</b></code>
+                </li>
+                <li>
+                  <b>nombre (opcional) </b> : Filtra ciudades por nombre <br />
+                  <code>api/ciudad/217?nombre=Guanarito</code>
+                </li>
+                <pre><code class="language-json" >[
+                  {
+                    "id": 2682979,
+                    "region_id": 3717,
+                    "country_id": 217,
+                    "latitude": "8.70222220",
+                    "longitude": "-69.20722220",
+                    "name": "Guanarito"
+                  },
+                  {
+                    "id": 2682978,
+                    "region_id": 3720,
+                    "country_id": 217,
+                    "latitude": "10.57166670",
+                    "longitude": "-69.68388890",
+                    "name": "Guanarito"
+                  }
+                ]</code></pre>
+                <li>
+                  <b>estado_id (opcional):</b> Sirve para buscar las ciudades de
+                  un estado.
+                  <br />
+                  <code>api/ciudad/217?ciudad_id?id_stado=<b>3717</b></code>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <h1>Países</h1>
-      <p>Este endpoint permite obtener una lista de países del mundo.</p>
-      <pre><code><span class="badge text-bg-primary">GET</span> /api/pais</code></pre>
-      <h3>Parámetros</h3>
-      <ul>
-        <li><strong>Query Parameters:</strong></li>
-        <!-- Detalles de los parámetros -->
-        <li>
-          <strong>nombre</strong> (opcional): Filtra los resultados para incluir
-          solo aquellos países cuyo nombre coincide con el valor proporcionado.
-          <br />
-          <code>/api/pais?nombre=Venezuela</code>.
-        </li>
-      </ul>
-      <h3>Respuesta</h3>
-      <p>
-        La respuesta es un array de objetos, donde cada objeto representa un
-        país. Cada objeto contiene los siguientes campos:
-      </p>
-      <ul>
-        <li><strong>id</strong>: Un número único que identifica al país.</li>
-        <li><strong>name</strong>: El nombre oficial del país.</li>
-        <li>
-          <strong>code</strong>: Un código de dos letras que representa al país.
-        </li>
-      </ul>
-
-      <h3>Ejemplo.</h3>
-      <pre><code><span class="badge text-bg-primary">GET</span> api/pais?nombre=Ve</code></pre>
-      <h4>Reponse</h4>
-      <pre><code class="language-json">[
-        {
-          "id": 47,
-          "name": "Cape Verde",
-          "code": "cv"
-        },
-        {
-          "id": 142,
-          "name": "Maldives",
-          "code": "mv"
-        },
-        {
-          "id": 185,
-          "name": "Slovenia",
-          "code": "si"
-        },
-        {
-          "id": 217,
-          "name": "Venezuela",
-          "code": "ve"
-        }
-      ]</code></pre>
-      <hr />
-      <h2>Estados</h2>
-      <p>
-        El endpoint de estados es una ruta específica diseñada para proporcionar
-        información sobre todos los estados de un país en particular. Es
-        <b>fundamental</b> especificar el ID del país al realizar la consulta,
-        ya que los estados están asociados y dependen de países específicos.
-      </p>
-      <ul>
-        <li><strong>id</strong>: Un número único que identifica al estado.</li>
-        <li><strong>name</strong>: El nombre oficial del estado.</li>
-        <li>
-          <strong>code</strong>: Es un código numérico simple, puede ayudar a
-          organizar los resultados.
-        </li>
-      </ul>
-      <h3>Ejemplo</h3>
-      <pre><code><span class="badge text-bg-primary">GET</span> api/estados/217/?nombre=Por</code></pre>
-      <h4>Reponse</h4>
-      <pre><code class="language-json">[
-	{
-		"id": 3717,
-		"name": "Portuguesa",
-		"code": "18",
-		"country_id": 217
-	}
-]</code></pre>
-
-      <hr />
-
-      <h2>Ciudades</h2>
-      <p>
-        Este endpoint depende de un <b>país ID</b> Ese parámetro es requerido,
-        Servirá para mostrar las ciudades, pueblos o caseríos de un estado de un
-        País específico
-      </p>
-
-      <h3>Parámetros</h3>
-      <ul>
-        <li><strong>Query Parameters:</strong></li>
-        <!-- Detalles de los parámetros -->
-        <li>
-          <strong>nombre</strong> (opcional): Filtra los resultados para incluir
-          solo aquellos países cuyo nombre coincide con el valor proporcionado.
-          <pre>
-          <code>/api/ciudad/217?nombre=Guanarito</code>.
-          -- response
-          <code class="language-json">[
-            {
-              "id": 2682979,
-              "region_id": 3717,
-              "country_id": 217,
-              "latitude": "8.70222220",
-              "longitude": "-69.20722220",
-              "name": "Guanarito"
-            },
-            {
-              "id": 2682978,
-              "region_id": 3720,
-              "country_id": 217,
-              "latitude": "10.57166670",
-              "longitude": "-69.68388890",
-              "name": "Guanarito"
-            }
-          ]</code>
-          </pre>
-        </li>
-      </ul>
-
-      <pre><code><span class="badge text-bg-primary">GET</span>api/ciudad/217</code></pre>
-      <h3>Respuesta</h3>
-      <p>
-        La respuesta es un array de objetos, donde cada objeto representa una
-        ciudad. Cada objeto contiene los siguientes campos:
-      </p>
-      <ul>
-        <li>
-          <strong>id</strong>: Un número único que identifica a la ciudad.
-        </li>
-        <li>
-          <strong>region_id</strong>: Código que identifica al estado del país.
-        </li>
-        <li>
-          <strong>country_id</strong>: Código del país al que pertenece la
-          ciudad
-        </li>
-        <li><strong>latitude</strong>: Latitud de la cuidad.</li>
-        <li><strong>longitude</strong>: Longitud de la cuidad.</li>
-        <li><strong>name</strong>: Nombre de la cuidad.</li>
-      </ul>
-
-      <h3>Ejemplo</h3>
-      <pre><code><span class="badge text-bg-primary">GET</span> api/ciudad/217</code></pre>
-      <h4>Reponse</h4>
-      <pre><code class="language-json">[
-        {
-          "id": 2675032,
-          "region_id": 3709,
-          "country_id": 217,
-          "latitude": "11.00000000",
-          "longitude": "-70.66666670",
-          "name": "1 Beneficio"
-        },
-        {
-          "id": 2675040,
-          "region_id": 3709,
-          "country_id": 217,
-          "latitude": "11.80000000",
-          "longitude": "-70.01666670",
-          "name": "Abudure"
-        },
-        {
-          "id": 2675041,
-          "region_id": 3709,
-          "country_id": 217,
-          "latitude": "12.00750000",
-          "longitude": "-70.14722220",
-          "name": "Acaboa"
-        }... ]</code></pre>
-
-      <h2>Importante</h2>
+      <h2 class="text-center">Importante</h2>
       <p class="alert alert-info">
         Los datos aquí presentes pueden que no sean del todo correcto, por eso
         invitamos a la comunidad a colaborar abiertamente, a reportar cualquier
         incongruencia en la data además de invitarles a contribuir y en
-        cualquier mejora que considere importante para nuestra base de datos.
+        cualquier mejora que considere importante para la base de datos.
         Especialmente a aquellas ciudades o pueblos que no están en la base de
-        datos o tenga un nombre mal escrito. Todo el apoyo será bienvenido
+        datos o tenga un nombre mal escrito. Todo el apoyo será bienvenido.
       </p>
+
+      <div class="d-flex justify-content-center w-50 m-auto flex">
+        <code style="display: inline-block; width: 250px"
+          >Invítame un café, tal vez no halla mucho por ahora, pero lograremos
+          más! Con 🩷 trabajo y...
+        </code>
+        <div class="donate">
+          <div class="icon-cafe"></div>
+          <form
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+          >
+            <input
+              type="hidden"
+              name="business"
+              value="joangabriel684@gmail.com"
+            />
+            <input type="hidden" name="cmd" value="_donations" />
+            <input
+              type="hidden"
+              name="item_name"
+              value="Nombre de tu proyecto o causa"
+            />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+              name="submit"
+              alt="PayPal - The safer, easier way to pay online"
+            />
+            <img
+              alt=""
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="m-auto d-flex justify-content-center">
+        <a class="link-dark text-center" href="https://discord.gg/ZpuTrXMX">
+          <img
+            src="discord-icon-svgrepo-com.svg"
+            alt="Icono de Discord"
+            height="20px"
+            width="20px"
+            Target="_blank"
+          />Puedes ayudar reportando algún problema en el canal de Discord
+        </a>
+      </div>
     </section>
 
     <script

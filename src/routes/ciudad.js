@@ -14,12 +14,6 @@ router.get("/:pais_id", async (req, res) => {
     return res.send(ciudad);
   }
 
-  if (!pais_id) {
-    res.send({
-      message: "Faltan parametros en la busqueda, pais_id",
-      error: true,
-    });
-  }
   //si no se manda pais_id entonces no podemos buscar esa ciudad
   if (!pais_id) {
     return res.send({
@@ -28,24 +22,43 @@ router.get("/:pais_id", async (req, res) => {
     });
   }
 
-  if (nombre) {
-    const ciudadByName = await Query.where("country_id", pais_id).where(
-      "name",
-      "LIKE",
-      `%${nombre}%`
-    );
-    console.log(ciudadByName);
-    return res.send(ciudadByName);
-  }
+  if (nombre && estado_id) {
+    //Nos estan dando 2 id asi ejecutamos la consulta mas rapido
+    try {
+      const ciudades = await Query.where("country_id", "=", pais_id).where(
+        "reginon_id",
+        "=",
+        estado_id
+      );
+      return res.send(ciudades);
+    } catch (error) {
+      console.log(
+        "Acaba de ocurrir un fallo al  intentar pedir las ciudades pasando 2 parametros estadio id y pais id detalles -> " +
+          error
+      );
+      return res.render("500");
+    }
+  } else {
+    //Si solo viene nombre entonces buscamos una ciudad por nombre
+    if (nombre) {
+      const ciudadByName = await Query.where("country_id", pais_id).where(
+        "name",
+        "LIKE",
+        `%${nombre}%`
+      );
+      console.log(ciudadByName);
+      return res.send(ciudadByName);
+    }
 
-  //si estado id es verdadero buscamos las ciudades de ese estado
-  if (estado_id) {
-    const cities = await Query.where("country_id", pais_id).where(
-      "region_id",
-      estado_id
-    );
-    console.log(cities);
-    return res.send(cities);
+    //si nos dan un estado_id Mostramo las ciudades de ese estado
+    if (estado_id) {
+      const cities = await Query.where("country_id", pais_id).where(
+        "region_id",
+        estado_id
+      );
+      console.log(cities);
+      return res.send(cities);
+    }
   }
 
   //Si solo nos dan el pais_id solo ese parametro mostramos las ciudades compelta de ese pais
@@ -70,7 +83,8 @@ router.get("/", async (req, res) => {
     console.log("se solicito una sola ciudad");
     console.log(ciudad);
     return res.send(ciudad);
+  } else {
+    res.render("404");
   }
 });
-
 module.exports = router;

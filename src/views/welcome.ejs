@@ -25,15 +25,9 @@
     <title>The World Data</title>
   </head>
   <body class="bg-gradiente-vice-city">
-    <header
-      class="w-100 position-sticky d-flex justify-content-center"
-      style="top: 20px"
-    >
-      <%- include('header'); %>
-    </header>
+    <%- include('header'); %>
 
     <h2 class="main_title mt-5 text-light">The World API.</h2>
-
     <p class="text-center text text-light my-4 fs-6">
       Hola y bienvenido, está api te proporciona una lista de todos,los países
       del mundo con sus respectivos estados o regiones además de sus ciudades o
@@ -52,7 +46,7 @@
       <div
         class="container d-flex flex-column justify-content-center align-items-center text-center"
       >
-        <h2 class="fs-2">Ejemplo</h2>
+        <h2 class="font-monospace">Ejemplo</h2>
       </div>
 
       <div class="form-floating mx-auto p-2">
@@ -61,11 +55,17 @@
           id="select_pais"
           aria-label="Default select example"
         >
-          <option selected value="default">--Selecciona un pais--</option>
+          <option selected value="default">Selecciona un pais</option>
           <% paises.forEach(function(pais) { %>
           <option value="<%= pais.id %>"><%= pais.name %></option>
           <% }); %>
         </select>
+        <label for="select_pais"
+          >Pais
+          <div class="bar-load hiden" id="bar-load-estado">
+            <div class="bar-padding"></div>
+          </div>
+        </label>
       </div>
 
       <div class="form-floating p-2">
@@ -74,11 +74,11 @@
           id="select_estado"
           aria-label="Default select example"
         >
-          <option selected value="default">--Selecciona un Estado--</option>
+          <option selected value="default">Selecciona un Estado</option>
         </select>
 
-        <label for="select_pais"
-          >Seleccione un estado
+        <label for="select_estado"
+          >Estados
           <div class="bar-load hiden" id="bar-load-estado">
             <div class="bar-padding"></div>
           </div>
@@ -91,9 +91,9 @@
           id="select_ciudad"
           aria-label="Default select example"
         >
-          <option selected value="default">--Selecione una Ciudad--</option>
+          <option selected value="default">Selecione una Ciudad</option>
         </select>
-        <label for="select_pais">
+        <label for="select_ciudad">
           Ciudades
           <div class="bar-load hiden" id="bar-load-ciudad">
             <div class="bar-padding"></div>
