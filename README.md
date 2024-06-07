@@ -24,6 +24,7 @@ Los datos demográficos proporcionados en este proyecto son una herramienta para
 ## Colaboración
 
 Algunas localidades no están actualizada en tal caso podrías informar de algún error y publicarlo para que modifiquemos esa region especifica y asi mejoremos la Precision de los datos.
+Agradecemos que acualquier reporte lo hagan al canal de discor, <a class="link-dark text-center" href="https://discord.gg/ZpuTrXMX">canal de Discord</a>
 
 ## Muestra de Datos
 
