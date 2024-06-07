@@ -4,7 +4,6 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
@@ -14,6 +13,13 @@
     text-shadow: azure 10px;
     border-radius: 10px;
   }
+
+  /* Estilos para pantallas pequeñas (max-width: 575px) */
+  @media (max-width: 575px) {
+    .navbar .navOP {
+      flex-direction: column;
+    }
+  }
 </style>
 <header
   class="w-100 position-sticky d-flex justify-content-center"
@@ -21,14 +27,13 @@
 >
   <nav
     id="nav-bar-app"
-    class="navbar w-75 rounded bg-opacity-75 z-3"
-    style="backdrop-filter: blur(10px)"
+    class="navbar bg-opacity-75 z-3 rounded-2"
+    style="backdrop-filter: blur(10px); width: 90%"
   >
     <!-- Navbar content -->
-    <div class="container-fluid d-flex justify-content-betwend">
-      <a class="navbar-brand link-light" href="/">API World {🌎}</a>
-
-      <ul class="nav justify-content-center">
+    <div class="container-fluid d-flex justify-content-between">
+      <a class="navbar-brand link-light text-center" href="/">API World {🌎}</a>
+      <ul class="nav justify-content-center navOP">
         <li class="nav-item">
           <a
             class="nav-link link-light"

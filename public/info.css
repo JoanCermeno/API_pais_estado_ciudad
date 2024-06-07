@@ -3,6 +3,9 @@
   padding: 0;
   font-family: sans-serif;
 }
+body {
+  height: 100vh;
+}
 .main_title {
   text-align: center;
 }
@@ -59,7 +62,30 @@
     #ec6ead,
     #3494e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation: colorear easy-in 1s;
+  animation: colorear 1s;
+  animation-iteration-count: infinite;
+}
+
+.bg-gradiente-dark {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-size: 200% 100%; /* Asegúrate de que el tamaño del fondo sea mayor */
+  animation: moverFondo 10s infinite; /* Define la animación */
+  animation-direction: alternate;
+}
+
+.fondo-azul-claro {
+  background-color: rgb(211 219 243);
+}
+@keyframes moverFondo {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1% 0;
+  }
 }
 
 @keyframes colorear {
@@ -67,7 +93,7 @@
     background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 400%;
   }
   100% {
     background-position: 0% 50%;
@@ -75,4 +101,96 @@
 }
 .title_doc {
   text-align: center;
+}
+
+.texto-degradado {
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#btnGetInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+  width: 100%;
+  height: 3rem;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  color: #ffff;
+}
+
+#btnGetInfo:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+#btnGetInfo:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+#btnGetInfo span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+#btnGetInfo:hover span {
+  color: #000;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#btnGetInfo:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+.bg-oscuroPersonalizado {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.icon-cafe {
+  background-image: url(taza-de-cafe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
 }

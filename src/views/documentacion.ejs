@@ -9,7 +9,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" type="text/css" href="info.css" />
     <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
     <link
       href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
@@ -34,16 +34,17 @@
     </style>
     <title>Rutas de la API</title>
   </head>
-  <body class="bg-gradiente-vice-city">
+  <body class="bg-gradiente-dark">
     <%- include('header'); %>
 
-    <section class="container bg-light rounded p-5 mt-5">
-      <h2 class="text-left">Guía Rápida</h2>
+    <div class="container rounded mt-5 bg-light">
+      <div class="row shadow-sm">
+        <div class="col-4 rounded shadow py-4 overflow-auto">
+          <h1 class="text-center fs-4 fw-bold texto-degradado">
+            Enpoints disponibles
+          </h1>
 
-      <div class="row bg-white rounded p-5 border-2 shadow-sm mb-5">
-        <div class="col-4 bg-light rounded h-100 py-5 shadow">
-          <pre class="text-center">Enpoints disponibles </pre>
-          <div class="list-group" id="list-tab" role="tablist">
+          <div class="list-group p-4" id="list-tab" role="tablist">
             <a
               class="list-group-item list-group-item-action active"
               id="list-pais-list"
@@ -73,7 +74,7 @@
             >
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-8 p-3">
           <div class="tab-content" id="nav-tabContent">
             <div
               class="tab-pane fade show active"
@@ -95,12 +96,12 @@
 
                   <code>api/pais/217</code>
                   <pre><code class="language-json">
-                    {
-                      "id": 217,
-                      "name": "Venezuela",
-                      "code": "ve"
-                    }
-                  </code></pre>
+                      {
+                        "id": 217,
+                        "name": "Venezuela",
+                        "code": "ve"
+                      }
+                    </code></pre>
                 </li>
                 <h3>Respuesta</h3>
                 <p>
@@ -125,27 +126,27 @@
                   <br />
 
                   <pre><code class="language-json">[
-                    {
-                      "id": 47,
-                      "name": "Cape Verde",
-                      "code": "cv"
-                    },
-                    {
-                      "id": 142,
-                      "name": "Maldives",
-                      "code": "mv"
-                    },
-                    {
-                      "id": 185,
-                      "name": "Slovenia",
-                      "code": "si"
-                    },
-                    {
-                      "id": 217,
-                      "name": "Venezuela",
-                      "code": "ve"
-                    }
-                  ]</code></pre>
+                      {
+                        "id": 47,
+                        "name": "Cape Verde",
+                        "code": "cv"
+                      },
+                      {
+                        "id": 142,
+                        "name": "Maldives",
+                        "code": "mv"
+                      },
+                      {
+                        "id": 185,
+                        "name": "Slovenia",
+                        "code": "si"
+                      },
+                      {
+                        "id": 217,
+                        "name": "Venezuela",
+                        "code": "ve"
+                      }
+                    ]</code></pre>
                 </li>
               </ul>
             </div>
@@ -174,13 +175,13 @@
                 </li>
                 <br />
                 <pre><code class="language-json">[
-                  {
-                    "id": 3717,
-                    "name": "Portuguesa",
-                    "code": "18",
-                    "country_id": 217
-                  }
-                ]</code></pre>
+                    {
+                      "id": 3717,
+                      "name": "Portuguesa",
+                      "code": "18",
+                      "country_id": 217
+                    }
+                  ]</code></pre>
               </ul>
             </div>
             <div
@@ -202,23 +203,23 @@
                   <code>api/ciudad/217?nombre=Guanarito</code>
                 </li>
                 <pre><code class="language-json" >[
-                  {
-                    "id": 2682979,
-                    "region_id": 3717,
-                    "country_id": 217,
-                    "latitude": "8.70222220",
-                    "longitude": "-69.20722220",
-                    "name": "Guanarito"
-                  },
-                  {
-                    "id": 2682978,
-                    "region_id": 3720,
-                    "country_id": 217,
-                    "latitude": "10.57166670",
-                    "longitude": "-69.68388890",
-                    "name": "Guanarito"
-                  }
-                ]</code></pre>
+                    {
+                      "id": 2682979,
+                      "region_id": 3717,
+                      "country_id": 217,
+                      "latitude": "8.70222220",
+                      "longitude": "-69.20722220",
+                      "name": "Guanarito"
+                    },
+                    {
+                      "id": 2682978,
+                      "region_id": 3720,
+                      "country_id": 217,
+                      "latitude": "10.57166670",
+                      "longitude": "-69.68388890",
+                      "name": "Guanarito"
+                    }
+                  ]</code></pre>
                 <li>
                   <b>estado_id (opcional):</b> Sirve para buscar las ciudades de
                   un estado.
@@ -230,68 +231,7 @@
           </div>
         </div>
       </div>
-
-      <h2 class="text-center">Importante</h2>
-      <p class="alert alert-info">
-        Los datos aquí presentes pueden que no sean del todo correcto, por eso
-        invitamos a la comunidad a colaborar abiertamente, a reportar cualquier
-        incongruencia en la data además de invitarles a contribuir y en
-        cualquier mejora que considere importante para la base de datos.
-        Especialmente a aquellas ciudades o pueblos que no están en la base de
-        datos o tenga un nombre mal escrito. Todo el apoyo será bienvenido.
-      </p>
-
-      <div class="d-flex justify-content-center w-50 m-auto flex">
-        <code style="display: inline-block; width: 250px"
-          >Invítame un café, tal vez no halla mucho por ahora, pero lograremos
-          más! Con 🩷 trabajo y...
-        </code>
-        <div class="donate">
-          <div class="icon-cafe"></div>
-          <form
-            action="https://www.paypal.com/donate"
-            method="post"
-            target="_top"
-          >
-            <input
-              type="hidden"
-              name="business"
-              value="joangabriel684@gmail.com"
-            />
-            <input type="hidden" name="cmd" value="_donations" />
-            <input
-              type="hidden"
-              name="item_name"
-              value="Nombre de tu proyecto o causa"
-            />
-            <input type="hidden" name="currency_code" value="USD" />
-            <input
-              type="image"
-              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-              name="submit"
-              alt="PayPal - The safer, easier way to pay online"
-            />
-            <img
-              alt=""
-              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-              width="1"
-              height="1"
-            />
-          </form>
-        </div>
-      </div>
-      <div class="m-auto d-flex justify-content-center">
-        <a class="link-dark text-center" href="https://discord.gg/ZpuTrXMX">
-          <img
-            src="discord-icon-svgrepo-com.svg"
-            alt="Icono de Discord"
-            height="20px"
-            width="20px"
-            Target="_blank"
-          />Puedes ayudar reportando algún problema en el canal de Discord
-        </a>
-      </div>
-    </section>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
