@@ -27,186 +27,123 @@
   <body class="bg-gradiente-dark">
     <%- include('header'); %>
 
-    <h2 class="main_title mt-5 text-light fs-1">
-      The World API.
-      <span class="text-center text-light fs-1">{🌎}</span>
-    </h2>
-    <p class="text-start text text-light my-4 fs-5 lh-base mb-5">
-      ¡Hola! 👋 y bienvenidos Les presentamos nuestra API, que les ofrece una
-      lista completa de todos los países del mundo, detallando sus estados o
-      regiones, así como sus ciudades o pueblos. Este ejemplo sirve como
-      demostración de las posibilidades que estos datos pueden ofrecer. La API
-      ha sido creada con el objetivo de facilitar el acceso a información
-      geográfica precisa y actualizada.<b style="color: brown">(*)</b>
-      <br />Colaboradores:
-      <a href="https://github.com/JoanCermeno" class="text-light"
-        ><b>Joan Cermeño</b></a
-      >
-      y
-      <a href="https://www.linkedin.com/in/hierro59/" class="text-light">
-        <b>Félix Eduardo</b></a
-      >
-    </p>
 
-    <div class="container w-75 p-3 border rounded fondo-azul-claro mt-2">
-      <h2 class="text-center mx-2 fs-1 fw-bolder texto-degradado">Ejemplo</h2>
-      <div class="form-floating mx-auto p-2" style="cursor: pointer">
-        <select
-          class="form-select form-select-sm"
-          id="select_pais"
-          aria-label="Default select example"
+    <main>
+      <h2 class="main_title mt-5 text-light fs-1">
+        The World API.
+        <span class="text-center text-light fs-1">{🌎}</span>
+      </h2>
+      <p class="text-start text text-light my-4 fs-7 lh-base mb-5">
+        ¡Hola! 👋 y bienvenidos Les presentamos nuestra API, que les ofrece una
+        lista completa de todos los países del mundo, detallando sus estados o
+        regiones, así como sus ciudades o pueblos. Este ejemplo sirve como
+        demostración de las posibilidades que estos datos pueden ofrecer. La API
+        ha sido creada con el objetivo de facilitar el acceso a información
+        geográfica precisa y actualizada.<b style="color: brown">(*)</b>
+        <br />Colaboradores:
+        <a href="https://github.com/JoanCermeno" class="text-light"
+          ><b>Joan Cermeño</b></a
         >
-          <option selected value="default">Selecciona un pais</option>
-          <% paises.forEach(function(pais) { %>
-          <option value="<%= pais.id %>"><%= pais.name %></option>
-          <% }); %>
-        </select>
-        <label for="select_pais"
-          >Pais
-          <div class="bar-load hiden" id="bar-load-estado">
-            <div class="bar-padding"></div>
-          </div>
-        </label>
-      </div>
-
-      <div class="form-floating p-2" style="cursor: pointer">
-        <select
-          class="form-select form-select-sm"
-          id="select_estado"
-          aria-label="Default select example"
+        y
+        <a href="https://www.linkedin.com/in/hierro59/" class="text-light">
+          <b>Félix Eduardo</b></a
         >
-          <option selected value="default">Selecciona un Estado</option>
-        </select>
-
-        <label for="select_estado"
-          >Estados
-          <div class="bar-load hiden" id="bar-load-estado">
-            <div class="bar-padding"></div>
-          </div>
-        </label>
-      </div>
-
-      <div class="form-floating p-2" style="cursor: pointer">
-        <select
-          class="form-select form-select-sm"
-          id="select_ciudad"
-          aria-label="Default select example"
-        >
-          <option selected value="default">Selecione una Ciudad</option>
-        </select>
-        <label for="select_ciudad">
-          Ciudades
-          <div class="bar-load hiden" id="bar-load-ciudad">
-            <div class="bar-padding"></div>
-          </div>
-        </label>
-      </div>
-
-      <div class="container mt-2"">
-        <button type="button" id="btnGetInfo">
-          <span>Solicitar informació</span>
-        </button>
-      </div>
-
-      <section
-        class="container d-none d-flex flex-column align-items-center mt-5"
-        id="section-map"
-      >
-        <article
-          class="container alert alert-dark"
-          id="article_description"
-          role="alert"
-        >
-          <div class="bar-load hiden" id="bar-load-metada">
-            <div class="bar-padding"></div>
-          </div>
-        </article>
-
-        <div
-          class="hiden mx-auto mb-5"
-          id="map"
-          style="width: 400px; height: 300px"
-        ></div>
-
-        <section
-          id="bottom-container-map"
-          class="container d-flex justify-content-evenly alert alert-info"
-          role="alert"
-        >
-          <span class="badge text-bg-info text-light" id="badge-lng"></span>
-          <span class="badge text-bg-info text-light" id="badge-lat"></span>
-        </section>
-      </section>
-    </div>
-    <footer class="w-100  mt-5 p-4  d-flex justify-content-between align-content-center bg-oscuroPersonalizado">
-
-      <p class="text-secondary w-50">
-        Los datos aquí presentes pueden que no sean del todo correcto, por eso
-        invitamos a la comunidad a colaborar abiertamente, a reportar cualquier
-        incongruencia en la data además de invitarles a contribuir y en
-        cualquier mejora que considere importante para la base de datos.
-        Especialmente a aquellas ciudades o pueblos que no están en la base de
-        datos o tenga un nombre mal escrito. Todo el apoyo será bienvenido.
       </p>
-
-        <div class="w-50" style="padding-left: 4rem;">
-          <code class="text-info">
-            Invítame un café, tal vez no halla mucho por ahora, pero lograremos
-            más! Con 🩷 y
-          </code>
-          <form
-            action="https://www.paypal.com/donate"
-            method="post"
-            target="_top"
-             class="d-flex justify-content-estar align-items-center"
+  
+      <div class="container w-75 p-3 border rounded fondo-azul-claro mt-2">
+        <h2 class="text-center mx-2 fs-1 fw-bolder texto-degradado">Ejemplo</h2>
+        <div class="form-floating mx-auto p-2" style="cursor: pointer">
+          <select
+            class="form-select form-select-sm"
+            id="select_pais"
+            aria-label="Default select example"
           >
-          
-            <input
-              type="hidden"
-              name="business"
-              value="joangabriel684@gmail.com"
-            />
-            <input type="hidden" name="cmd" value="_donations" />
-            <input
-              type="hidden"
-              name="item_name"
-              value="Nombre de tu proyecto o causa"
-            />
-            <input type="hidden" name="currency_code" value="USD" />
-            <input
-              type="image"
-              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-              name="submit"
-              alt="PayPal - The safer, easier way to pay online"
-            />
-            <img
-              alt=""
-              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-              width="1"
-              height="1"
-            />
-          <div class="icon-cafe"></div>
-
-          </form>
-
-
-              <a class="link-warning text-end" href="https://discord.gg/ZpuTrXMX">
-                Puedes ayudar reportando algún problema en el canal de Discord
-              </a>
-              <img
-              src="discord-icon-svgrepo-com.svg"
-              alt="Icono de Discord"
-              height="20px"
-              width="20px"
-              Target="_blank"
-            />
-
-
+            <option selected value="default">Selecciona un pais</option>
+            <% paises.forEach(function(pais) { %>
+            <option value="<%= pais.id %>"><%= pais.name %></option>
+            <% }); %>
+          </select>
+          <label for="select_pais"
+            >Pais
+            <div class="bar-load hiden" id="bar-load-estado">
+              <div class="bar-padding"></div>
+            </div>
+          </label>
         </div>
   
+        <div class="form-floating p-2" style="cursor: pointer">
+          <select
+            class="form-select form-select-sm"
+            id="select_estado"
+            aria-label="Default select example"
+          >
+            <option selected value="default">Selecciona un Estado</option>
+          </select>
+  
+          <label for="select_estado"
+            >Estados
+            <div class="bar-load hiden" id="bar-load-estado">
+              <div class="bar-padding"></div>
+            </div>
+          </label>
+        </div>
+  
+        <div class="form-floating p-2" style="cursor: pointer">
+          <select
+            class="form-select form-select-sm"
+            id="select_ciudad"
+            aria-label="Default select example"
+          >
+            <option selected value="default">Selecione una Ciudad</option>
+          </select>
+          <label for="select_ciudad">
+            Ciudades
+            <div class="bar-load hiden" id="bar-load-ciudad">
+              <div class="bar-padding"></div>
+            </div>
+          </label>
+        </div>
+  
+        <div class="container mt-2"">
+          <button type="button" id="btnGetInfo">
+            <span>Solicitar informació</span>
+          </button>
+        </div>
+  
+        <section
+          class="container d-none d-flex flex-column align-items-center mt-5"
+          id="section-map"
+        >
+          <article
+            class="container alert alert-dark"
+            id="article_description"
+            role="alert"
+          >
+            <div class="bar-load hiden" id="bar-load-metada">
+              <div class="bar-padding"></div>
+            </div>
+          </article>
+  
+          <div
+            class="hiden mx-auto mb-5"
+            id="map"
+            style="width: 400px; height: 300px"
+          ></div>
+  
+          <section
+            id="bottom-container-map"
+            class="container d-flex justify-content-evenly alert alert-info"
+            role="alert"
+          >
+            <span class="badge text-bg-info text-light" id="badge-lng"></span>
+            <span class="badge text-bg-info text-light" id="badge-lat"></span>
+          </section>
+        </section>
+      </div>
+    </main>
+   
+    <%- include('footer'); %>
 
-
-    </footer>
     <script type="text/javascript" src="/selectSearch.js"></script>
     <script type="text/javascript" src="/showMap.js"></script>
     <script type="text/javascript" src="/reqWikipedia.js"></script>
